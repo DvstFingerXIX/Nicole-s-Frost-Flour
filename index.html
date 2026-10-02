@@ -104,7 +104,7 @@ body.has-cart .order{display:none}
 <p class="eyebrow">Nicole's Frost &amp; Flour · Homemade since 2020</p>
 <h1>Ulam na agad.<span>Marinated, frozen, ready-to-cook.</span></h1>
 <p class="sub">Bagnet, tapa, shanghai, whole chicken at marami pang iba, gawa sa bahay at bagong balot.</p>
-<div class="cta"><a class="btn fb" href="https://m.me/tibs.sabas" target="_blank" rel="noopener">Order on Messenger</a><a class="btn ghost" href="#m">See price list</a></div>
+<div class="cta"><a class="btn fb" href="https://m.me/mai.velano" target="_blank" rel="noopener">Order on Messenger</a><a class="btn ghost" href="#m">See price list</a></div>
 <ul class="hchips"><li>🎁 Free ham bag with every combo</li><li>❄️ Packed frozen, ready-to-cook</li><li>🚚 Free delivery in Quezon City</li></ul>
 <p class="upd">Price list · Updated Sept 25, 2026</p>
 </header>
@@ -115,12 +115,12 @@ body.has-cart .order{display:none}
 </section>
 <nav><div class="navin"><input id="q" type="search" placeholder="Search the menu (e.g. tapa, bagnet, chicken)"><div class="chips" id="chips"></div></div></nav>
 <div id="photos"><h2>Product Photos</h2><div class="grid" id="g"></div></div>
-<div id="lb" role="dialog" aria-label="Photo"><img alt=""><span></span><a href="https://m.me/tibs.sabas" target="_blank" rel="noopener">Order on Messenger</a></div>
+<div id="lb" role="dialog" aria-label="Photo"><img alt=""><span></span><a href="https://m.me/mai.velano" target="_blank" rel="noopener">Order on Messenger</a></div>
 <main id="m"></main>
 <div id="cart" hidden><div id="items"></div></div>
 <div id="bar" hidden><button id="view" type="button"></button><button id="send" type="button">Send order on Messenger</button></div>
 <div id="toast" role="status" hidden></div>
-<a class="order" href="https://m.me/tibs.sabas" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.15 2 11.27c0 2.9 1.45 5.48 3.72 7.17V22l3.4-1.87c.9.25 1.86.39 2.88.39 5.52 0 10-4.15 10-9.27S17.52 2 12 2zm1.03 12.49-2.55-2.72-4.97 2.72 5.47-5.8 2.61 2.72 4.91-2.72-5.47 5.8z"/></svg>Order on Messenger</a>
+<a class="order" href="https://m.me/mai.velano" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.15 2 11.27c0 2.9 1.45 5.48 3.72 7.17V22l3.4-1.87c.9.25 1.86.39 2.88.39 5.52 0 10-4.15 10-9.27S17.52 2 12 2zm1.03 12.49-2.55-2.72-4.97 2.72 5.47-5.8 2.61 2.72 4.91-2.72-5.47 5.8z"/></svg>Order on Messenger</a>
 <footer>Prices in Philippine pesos (₱). Weights are approximate.</footer>
 <script>
 const D=[
@@ -174,7 +174,7 @@ const pa=document.createElement('a');pa.href='#photos';pa.textContent='Photos';d
 </script>
 <script>
 (()=>{
-const MSG='https://m.me/tibs.sabas',cart={},$=s=>document.querySelector(s),peso=n=>'₱'+n.toLocaleString('en-PH');
+const MSG='https://m.me/mai.velano',cart={},$=s=>document.querySelector(s),peso=n=>'₱'+n.toLocaleString('en-PH');
 function mk(name,price,label,cls){const b=document.createElement('button');b.type='button';b.className=cls;b.dataset.add=encodeURIComponent(name+'|'+price);b.dataset.label=label;b.dataset.n=name;b.dataset.p=price;b.textContent=label;b.setAttribute('aria-label','Add '+name+' to order');return b}
 document.querySelectorAll('.pc').forEach(c=>{
  const box=c.querySelector('div'),ptxt=c.querySelector('b').textContent,nums=[...ptxt.matchAll(/₱(\d+)/g)].map(m=>+m[1]),par=ptxt.match(/\(.*\)/);
