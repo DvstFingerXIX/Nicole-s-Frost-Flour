@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nicole's Frost &amp; Flour — Homemade Frozen Marinated Meats</title>
+<meta name="description" content="Homemade frozen marinated meats and ready-to-cook ulam since 2020. Bagnet, tapa, shanghai, chicken and more. Order via Messenger.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Nicole's Frost &amp; Flour">
+<meta property="og:locale" content="en_PH">
+<meta property="og:title" content="Nicole's Frost &amp; Flour — Ulam na agad!">
+<meta property="og:description" content="Homemade since 2020. Marinated, frozen, ready-to-cook. See the price list and order on Messenger.">
+<meta property="og:url" content="https://nicole-s-frost-flour.vercel.app/">
+<meta property="og:image" content="https://nicole-s-frost-flour.vercel.app/og-cover.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Nicole's Frost &amp; Flour — homemade frozen marinated meats">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://nicole-s-frost-flour.vercel.app/og-cover.jpg">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;800&family=Figtree:wght@400;600&display=swap">
+<style>
+:root{--bg:#eaf3f8;--card:#fff;--ink:#12304a;--mute:#5d7488;--line:#b9d2e2;--berry:#c2415d;--chip:#d6e8f3;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1f2e;--card:#162c40;--ink:#e6f1f8;--mute:#93abbd;--line:#2d4a63;--berry:#ff7b96;--chip:#1f3b53}}
+:root[data-theme="dark"]{--bg:#0e1f2e;--card:#162c40;--ink:#e6f1f8;--mute:#93abbd;--line:#2d4a63;--berry:#ff7b96;--chip:#1f3b53}
+html{scroll-padding-top:70px}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.4 Figtree,system-ui,sans-serif}
+header{padding:40px 20px 24px;max-width:1000px;margin:auto}
+h1{font:800 clamp(2rem,6vw,3.4rem)/1 'Bricolage Grotesque',Georgia,sans-serif;margin:0 0 8px;letter-spacing:-.02em}
+header p{margin:4px 0;color:var(--mute)}
+.gift{display:inline-block;margin-top:12px;background:var(--berry);color:#fff;padding:8px 14px;border-radius:999px;font-weight:600;font-size:.95rem}
+nav{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);padding:10px 20px;padding-top:calc(10px + env(safe-area-inset-top,0px))}
+.navin{max-width:1000px;margin:auto}
+input{width:100%;padding:10px 14px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink);font:inherit;margin-bottom:8px}
+.chips{display:flex;gap:6px;overflow-x:auto;padding-bottom:2px}
+.chips a{flex:none;background:var(--chip);color:var(--ink);text-decoration:none;padding:5px 12px;border-radius:999px;font-size:.85rem}
+main{max-width:1000px;margin:auto;padding:12px 20px 60px;columns:2 400px;column-gap:20px}
+section{break-inside:avoid;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:0 0 20px}
+h2{font:800 1.25rem 'Bricolage Grotesque',Georgia,sans-serif;margin:0 0 2px}
+.note{color:var(--mute);font-size:.85rem;margin:0 0 8px}
+ul{list-style:none;margin:8px 0 0;padding:0}
+li{display:flex;align-items:baseline;gap:8px;padding:5px 0}
+li .n{flex:0 1 auto}
+li small{color:var(--mute)}
+li i{flex:1;border-bottom:2px dotted var(--line);min-width:12px;transform:translateY(-3px)}
+li b{color:var(--berry);font-weight:600;white-space:nowrap}
+.hide{display:none}
+footer{text-align:center;color:var(--mute);font-size:.85rem;padding:0 20px 40px}
+.order{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:10;display:flex;align-items:center;gap:8px;background:#0084ff;color:#fff;text-decoration:none;font-weight:600;padding:12px 18px;border-radius:999px;box-shadow:0 4px 14px rgba(0,0,0,.25)}
+.order svg{width:20px;height:20px;fill:#fff}
+.order:focus-visible{outline:3px solid var(--berry);outline-offset:2px}
+.hbtn{display:inline-block;margin:12px 0 0 8px;background:#0084ff;color:#fff;text-decoration:none;padding:8px 14px;border-radius:999px;font-weight:600;font-size:.95rem}
+#photos{max-width:1000px;margin:auto;padding:8px 20px 0}
+#photos h2{margin-bottom:10px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+.pc{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+.pc button{border:0;padding:0;background:var(--chip);cursor:zoom-in;display:block;width:100%}
+.pc img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block}
+.pc div{padding:8px 10px 10px;font-size:.88rem;line-height:1.3}
+.pc b{display:block;color:var(--berry);margin-top:3px}
+.pc small{color:var(--mute);display:block}
+#lb{position:fixed;inset:0;z-index:20;background:rgba(5,15,25,.9);display:none;align-items:center;justify-content:center;flex-direction:column;gap:12px;padding:16px;padding-top:calc(16px + env(safe-area-inset-top,0px))}
+#lb.on{display:flex}
+#lb img{max-width:100%;max-height:78%;border-radius:10px}
+#lb span{color:#fff;font-weight:600;text-align:center}
+#lb a{background:#0084ff;color:#fff;text-decoration:none;padding:10px 18px;border-radius:999px;font-weight:600}
+.cover{width:100%;background:#0b0b0b;line-height:0}
+.cover img{display:block;width:100%;max-width:1200px;margin:auto;height:auto;max-height:46vh;object-fit:cover;object-position:center bottom}
+.eyebrow{letter-spacing:.12em;text-transform:uppercase;font-size:.8rem;color:var(--mute);margin:0 0 8px}
+h1 span{display:block;font-size:.5em;color:var(--berry);margin-top:10px;letter-spacing:0;line-height:1.15}
+.sub{max-width:38ch;margin:0 0 18px;font-size:1.05rem}
+.cta{display:flex;gap:10px;flex-wrap:wrap}
+.btn{padding:12px 22px;border-radius:999px;font-weight:600;text-decoration:none;min-height:44px;display:inline-flex;align-items:center}
+.btn.fb{background:#0084ff;color:#fff}
+.btn.ghost{border:2px solid var(--ink);color:var(--ink)}
+.hchips{display:flex;gap:8px;flex-wrap:wrap;list-style:none;padding:0;margin:16px 0 0}
+.hchips li{background:var(--chip);padding:6px 12px;border-radius:999px;font-size:.85rem}
+.upd{font-size:.8rem;color:var(--mute);margin:12px 0 0}
+.add,.plus{border:0;cursor:pointer;font:inherit;font-weight:600}
+.acts{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+.add{background:var(--ink);color:var(--bg);border-radius:999px;padding:9px 12px;min-height:40px;font-size:.82rem;text-decoration:none;display:inline-flex;align-items:center}
+.add.ask{background:var(--chip);color:var(--ink)}
+.add.on,.plus.on{background:var(--berry);color:#fff}
+.plus{flex:none;min-width:40px;height:34px;border-radius:999px;background:var(--ink);color:var(--bg);font-size:1.05rem;margin:-4px 0}
+body.has-cart{padding-bottom:76px}
+body.has-cart .order{display:none}
+#bar{position:fixed;left:0;right:0;bottom:0;z-index:30;display:flex;justify-content:space-between;align-items:center;gap:10px;background:var(--ink);color:var(--bg);padding:10px 14px calc(10px + env(safe-area-inset-bottom,0px))}
+#bar[hidden],#cart[hidden],#toast[hidden]{display:none}
+#view{background:none;border:0;color:inherit;font:inherit;font-weight:600;text-align:left;padding:8px 0;min-height:44px;cursor:pointer}
+#send{background:#0084ff;color:#fff;border:0;border-radius:999px;padding:12px 16px;font:inherit;font-weight:600;min-height:44px;cursor:pointer}
+#cart{position:fixed;left:0;right:0;bottom:calc(66px + env(safe-area-inset-bottom,0px));z-index:29;max-height:50vh;overflow:auto;background:var(--card);border-top:1px solid var(--line);padding:8px 16px;box-shadow:0 -6px 20px rgba(0,0,0,.2)}
+.ci{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid var(--line)}
+.ci small{display:block;color:var(--mute)}
+.q{display:flex;align-items:center;gap:10px;font-weight:600;white-space:nowrap}
+.q button{width:36px;height:36px;border-radius:50%;border:1px solid var(--line);background:var(--chip);color:var(--ink);font-size:1.1rem;cursor:pointer}
+#cart textarea{width:100%;min-height:120px;margin-top:8px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);font:inherit;padding:8px}
+#toast{position:fixed;left:16px;right:16px;bottom:calc(84px + env(safe-area-inset-bottom,0px));z-index:40;background:#111;color:#fff;padding:12px 16px;border-radius:10px;text-align:center}
+#info{max-width:1000px;margin:0 auto;padding:4px 20px 20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.ic{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+.ic b{display:block;margin-bottom:4px}
+.ic p{margin:0;color:var(--mute);font-size:.92rem;line-height:1.45}
+.ic strong{color:var(--ink)}
+</style></head><body>
+<div class="cover"><img src="img/cover.webp" width="1167" height="600" fetchpriority="high" alt="Homemade since 2020 — full range of frozen marinated meats and ready-to-cook products"></div>
+<header>
+<p class="eyebrow">Nicole's Frost &amp; Flour · Homemade since 2020</p>
+<h1>Ulam na agad.<span>Marinated, frozen, ready-to-cook.</span></h1>
+<p class="sub">Bagnet, tapa, shanghai, whole chicken at marami pang iba, gawa sa bahay at bagong balot.</p>
+<div class="cta"><a class="btn fb" href="https://m.me/tibs.sabas" target="_blank" rel="noopener">Order on Messenger</a><a class="btn ghost" href="#m">See price list</a></div>
+<ul class="hchips"><li>🎁 Free ham bag with every combo</li><li>❄️ Packed frozen, ready-to-cook</li><li>🚚 Free delivery in Quezon City</li></ul>
+<p class="upd">Price list · Updated Sept 25, 2026</p>
+</header>
+<section id="info" aria-label="How to order">
+<div class="ic"><b>📅 How to order</b><p>Order on <strong>weekdays</strong>.<br>We deliver on <strong>weekends</strong>.</p></div>
+<div class="ic"><b>🚚 Pick-up or delivery</b><p><strong>Free delivery</strong> within Quezon City.<br>Meet-halfway and pick-up also available.</p></div>
+<div class="ic"><b>💳 Payment</b><p>GCash · Maya · Cash on delivery</p></div>
+</section>
+<nav><div class="navin"><input id="q" type="search" placeholder="Search the menu (e.g. tapa, bagnet, chicken)"><div class="chips" id="chips"></div></div></nav>
+<div id="photos"><h2>Product Photos</h2><div class="grid" id="g"></div></div>
+<div id="lb" role="dialog" aria-label="Photo"><img alt=""><span></span><a href="https://m.me/tibs.sabas" target="_blank" rel="noopener">Order on Messenger</a></div>
+<main id="m"></main>
+<div id="cart" hidden><div id="items"></div></div>
+<div id="bar" hidden><button id="view" type="button"></button><button id="send" type="button">Send order on Messenger</button></div>
+<div id="toast" role="status" hidden></div>
+<a class="order" href="https://m.me/tibs.sabas" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.15 2 11.27c0 2.9 1.45 5.48 3.72 7.17V22l3.4-1.87c.9.25 1.86.39 2.88.39 5.52 0 10-4.15 10-9.27S17.52 2 12 2zm1.03 12.49-2.55-2.72-4.97 2.72 5.47-5.8 2.61 2.72 4.91-2.72-5.47 5.8z"/></svg>Order on Messenger</a>
+<footer>Prices in Philippine pesos (₱). Weights are approximate.</footer>
+<script>
+const D=[
+["Hams & Combos","Free ham bag with all combos",[["B1T1 Ballham",135],["Ham, 1 pc (900g–1kg)",135],["Combo: Ham + mini roll",180],["Combo: Whole chicken + mini ham",195],["Combo: Whole chicken + mini roll",235],["Combo: BBQ ribs + ham",165],["Combo: BBQ ribs + mini roll",205],["Combo: BBQ stick + ham",185],["Combo: BBQ + roll",225],["Combo: Whole chicken cordon + ham",210],["Combo: Whole chicken cordon + roll",250]]],
+["Lechon Rolls","",[["Lechon roll, original",190],["Lechon de Cebu roll",190],["Lechon roll, spicy",190],["Mini single roll",125],["B1T1 mini roll (free ham bag)",220],["Mini twin roll",200],["Mini chick roll",190],["Regular twin roll",340],["Regular chick roll",290]]],
+["Shanghai & Homemade Favorites","Less ₱5 each when you order 10 pcs or more",[["Pork shanghai",120],["Cheesy pork shanghai",130],["Ham w/ cheese shanghai",130],["Chinese shanghai",130],["Dynamite shanghai",130],["Dynamite shanghai, with cheese",135],["Cheesy beef cream &amp; mushroom shanghai",135],["Cheesy bangus shanghai",130],["Beef jalapeño shanghai",135],["Chicken ala king shanghai",130],["Cheeseburger springroll",135],["Chicken cordon bleu by3",90],["Chicken cordon bleu promax",90],["Pork cordon bleu by3",90],["Pork cordon bleu promax",90],["Cheesy embotido by5",90],["Cheesy embotido promax",90],["Pork galantina 5in1",100],["Pork galantina promax",98],["Morcon 5in1",100],["Morcon promax",100],["Hardenera (everlasting)",115],["Homemade Jobee spaghetti sauce",145],["Special pork sisig",125]]],
+["Chicharon Bulaklak","Plain or spicy — same price",[["Buy 1 take 2, 400g",160],["Buy 1 take 1, 400g",125],["700g",120]]],
+["Tapa, Tocino & Bagnet Deals","",[["B1T2 garlic tapa (200–300g)",170],["B1T2 premium tocino (200–300g)",170],["Special pork tocino (400–500g)",130],["B1T2 liempo sliced inasal (3 packs)",170],["B1T2 Baliwag bagnet",170],["B1T2 litson bites",170],["B1T2 bagnet",170]]],
+["Chicken Bites","400–500g",[["Lemon teriyaki",105],["Honey garlic",105],["Korean fried",105],["Sweet &amp; spicy",105]]],
+["Marinated Whole Chicken","600–700g",[["Roasters whole chicken",140],["Chooks whole chicken",140],["Baliwag whole chicken",140],["Sweet &amp; spicy whole chicken",140],["Split whole chicken",140],["Whole butterfly breaded chicken",140],["Tinapang manok",140],["Daing na manok",140],["Angry chicken",140],["Whole chicken cordon bleu","stuffed with ham &amp; cheese",150]]],
+["Marinated Chicken ★ Bestseller","",[["Buy 1 take 2 (3 packs, 400g each)",145],["Buy 1 take 1 (2 packs, 400g each)",115],["Regular pack, 700–800g — Chicken flavors, Inasal, Jollychicken, Chinese style, Savory, Spicy buffalo, Korean soy garlic, Honey BBQ, Teriyaki, McSpicy, Kentucky, Tokyo",110]]],
+["Beef","",[["Jabee garlic pepper",150],["Beef tapa",150],["Lechon baka",150]]],
+["Pork Samgyupsal","400–500g",[["Plain",115],["Spicy",115],["Bulgogi",115],["Honey BBQ",115],["Soy garlic",115],["Salt &amp; pepper",115],["Curry",115],["Herbs",115],["Signature recipe",115],["Teriyaki",115],["Nongbuga kimchi B1T1",105]]],
+["Pork Tapa","400–500g",[["Tapa Calumpit pork",125],["Tapa Calumpit spicy",125],["Tapa Calumpit garlic",125],["Glazed pork tapa",125],["Hamonado pork tapa",125],["Smoked tapa",125]]],
+["BBQ Sticks","400–500g",[["Pork BBQ stick, original",130],["Pork BBQ stick, spicy",130],["Honey teriyaki",130],["Peri peri",130],["Pork tocino",130]]],
+["Pork & Liempo","400–450g",[["Pork teriyaki",130],["Pork steak",130],["Special pork tocino (400–500g)",130],["Very spicy liempo barbecue",130],["Garlic pepper liempo",130],["Sweet brown sugar liempo",130],["Liempo inasal",130]]],
+["Mini Bagnet Series","400–500g",[["Mini bagnet inasal",125],["Mini pork BBQ",125],["Mini pupor kawali",125],["Mini pupor kawali bites, spicy",125],["Mini marinated bagnet",125],["Mini marinated bagnet, spicy",125],["Mini breaded bagnet",125]]],
+["Bagnet — Regular Size","700–800g",[["Bagnet inasal",190],["Pork BBQ (liempo cut)",190],["Marinated bagnet",190],["Marinated bagnet, spicy",190],["Kawali bites",190],["Kawali bites, spicy",190],["Breaded bagnet (750–800g)",195],["Whole bagnet (850–950g)",200]]],
+["Pork Ribs & Chops","",[["BBQ ribs ala racks",110],["Spicy spareribs",80],["Spareribs with black beans",80],["Smoked pork loin chops (mini, 300–400g)",120],["Marinated porkchop (mini, 300–400g)",120]]],
+["Cold Cuts","",[["Porkchop, 400–500g",130],["Porkchop, 800–900g",220]]],
+["Fish","",[["Daing bangus",110],["Daing bangus, spicy",115],["Ginamos",70]]]
+];
+const m=document.getElementById('m'),c=document.getElementById('chips');
+D.forEach(([t,n,items],i)=>{
+ const s=document.createElement('section');s.id='s'+i;
+ s.innerHTML='<h2>'+t+'</h2>'+(n?'<p class="note">'+n+'</p>':'')+'<ul>'+items.map(x=>{
+  const sub=typeof x[1]==='string';const p=sub?x[2]:x[1];
+  return '<li><span class="n">'+x[0]+(sub?' <small>'+x[1]+'</small>':'')+'</span><i></i><b>₱'+p+'</b></li>'}).join('')+'</ul>';
+ m.appendChild(s);
+ const a=document.createElement('a');a.href='#s'+i;a.textContent=t.replace(' ★ Bestseller','');c.appendChild(a);
+});
+document.getElementById('q').addEventListener('input',e=>{
+ const v=e.target.value.toLowerCase().trim();
+ document.querySelectorAll('section').forEach(s=>{
+  let any=false;
+  s.querySelectorAll('li').forEach(l=>{const ok=!v||l.textContent.toLowerCase().includes(v)||s.querySelector('h2').textContent.toLowerCase().includes(v);l.classList.toggle('hide',!ok);if(ok)any=true});
+  s.classList.toggle('hide',!any);
+ });
+});
+</script><script>const G=[["Chinese Style Shanghai", "20 pcs/pack", "₱130", "img/p01.webp"], ["Cheesy Beef Jalapeño Shanghai", "20 pcs/pack", "₱135", "img/p02.webp"], ["Dynamite Shanghai", "20 pcs/pack · medium spicy", "₱130", "img/p03.webp"], ["Cheesy Beef &amp; Mushroom Shanghai", "20 pcs/pack", "₱135", "img/p04.webp"], ["Ham &amp; Cheese Shanghai", "20 pcs/pack", "₱130", "img/p05.webp"], ["Cheesy Bangus Shanghai", "20 pcs/pack", "₱130", "img/p06.webp"], ["Cheeseburger Springroll", "20 pcs/pack", "₱135", "img/p07.webp"], ["Chicken Ala King Shanghai", "20 pcs/pack · bestseller", "₱130", "img/p08.webp"], ["Garlic Pork Tapang Calumpit", "200–300g", "₱125", "img/p09.webp"], ["Morcon Promax with Cheese", "400–500g", "₱100", "img/p10.webp"], ["Pork Steak", "", "₱130", "img/p11.webp"], ["Beef Bulgogi", "200–250g", "Ask for price", "img/p12.webp"], ["Lechon Roll", "", "₱190", "img/p13.webp"], ["Pork BBQ on Stick", "", "₱130", "img/p14.webp"], ["Split Whole Chicken", "", "₱140", "img/p15.webp"], ["Special Pork Galantina 5in1 (with cheese)", "", "₱100", "img/p16.webp"], ["Spicy Pork BBQ on Stick", "", "₱130", "img/p17.webp"], ["JollyChicken", "marinated chicken", "₱110", "img/p18.webp"], ["Pork Teriyaki", "", "₱130", "img/p19.webp"], ["Honey Teriyaki Barbecue", "400–500g", "₱130", "img/p20.webp"], ["Ham &amp; Cheese Shanghai", "20 pcs/pack", "₱130", "img/p21.webp"], ["Korean Soy Garlic Chicken", "marinated chicken", "₱110", "img/p22.webp"], ["Baliwag Bagnet", "", "₱170 (buy 1 take 2)", "img/p23.webp"], ["Lechon de Cebu Roll", "", "₱190", "img/p24.webp"], ["Chooks Whole Chicken", "600–700g", "₱140", "img/p25.webp"], ["Marinated Bagnet", "", "₱125 mini · ₱190 regular", "img/p26.webp"], ["Baliwag Whole Chicken", "600–700g", "₱140", "img/p27.webp"], ["Chicken Cordon Bleu", "3 pcs/pack", "₱90", "img/p28.webp"], ["Special Pork Galantina", "", "₱98", "img/p29.webp"], ["Special Pork Galantina 5in1 (with cheese)", "", "₱100", "img/p30.webp"], ["Spicy Marinated Bagnet", "", "₱125 mini · ₱190 regular", "img/p31.webp"], ["Chicken Cordon Bleu Promax", "", "₱90", "img/p32.webp"], ["Pork Barbeque (Liempo Cut)", "", "₱190", "img/p33.webp"], ["Spicy Pupor Kawali Bites", "", "₱125 mini · ₱190 regular", "img/p34.webp"], ["Breaded Bagnet", "", "₱125 mini · ₱195 regular", "img/p35.webp"], ["Pupor Kawali Bites", "", "₱125 mini · ₱190 regular", "img/p36.webp"], ["Marinated Bagnet", "", "₱125 mini · ₱190 regular", "img/p37.webp"], ["Whole Bagnet", "850–950g", "₱200", "img/p38.webp"], ["Bagnet Series Assortment", "pupor, whole, breaded, inasal, marinated, BBQ", "₱125–₱200", "img/p39.webp"], ["Breaded Bagnet", "", "₱125 mini · ₱195 regular", "img/p40.webp"], ["Bagnet Inasal", "", "₱125 mini · ₱190 regular", "img/p41.webp"], ["Pork BBQ", "", "₱125 mini · ₱190 regular", "img/p42.webp"], ["Spicy Lechon Kawali Bites", "", "₱125 mini · ₱190 regular", "img/p43.webp"], ["Lechon Kawali Bites", "", "₱125 mini · ₱190 regular", "img/p44.webp"], ["Spicy Marinated Bagnet", "", "₱125 mini · ₱190 regular", "img/p45.webp"], ["Marinated Bagnet", "", "₱125 mini · ₱190 regular", "img/p46.webp"]]
+;const g=document.getElementById('g'),lb=document.getElementById('lb');
+G.forEach(([n,s,p,src])=>{const d=document.createElement('div');d.className='pc';
+ d.innerHTML='<button aria-label="View '+n+'"><img loading="lazy" alt="'+n+'" src="'+src.replace('img/','img/t-')+'" width="360" height="360"></button><div>'+n+(s?'<small>'+s+'</small>':'')+'<b>'+p+'</b></div>';
+ d.querySelector('button').onclick=()=>{lb.querySelector('img').src=src;lb.querySelector('img').alt=n;lb.querySelector('span').innerHTML=n+' — '+p;lb.classList.add('on')};g.appendChild(d)});
+lb.onclick=e=>{if(e.target.tagName!=='A')lb.classList.remove('on')};
+document.addEventListener('keydown',e=>{if(e.key==='Escape')lb.classList.remove('on')});
+document.getElementById('q').addEventListener('input',e=>{const v=e.target.value.toLowerCase().trim();
+ document.querySelectorAll('.pc').forEach(c=>c.classList.toggle('hide',!!v&&!c.textContent.toLowerCase().includes(v)));
+ document.getElementById('photos').classList.toggle('hide',!!v&&![...document.querySelectorAll('.pc')].some(c=>!c.classList.contains('hide')))});
+const pa=document.createElement('a');pa.href='#photos';pa.textContent='Photos';document.getElementById('chips').prepend(pa);
+</script>
+<script>
+(()=>{
+const MSG='https://m.me/tibs.sabas',cart={},$=s=>document.querySelector(s),peso=n=>'₱'+n.toLocaleString('en-PH');
+function mk(name,price,label,cls){const b=document.createElement('button');b.type='button';b.className=cls;b.dataset.add=encodeURIComponent(name+'|'+price);b.dataset.label=label;b.dataset.n=name;b.dataset.p=price;b.textContent=label;b.setAttribute('aria-label','Add '+name+' to order');return b}
+document.querySelectorAll('.pc').forEach(c=>{
+ const box=c.querySelector('div'),ptxt=c.querySelector('b').textContent,nums=[...ptxt.matchAll(/₱(\d+)/g)].map(m=>+m[1]),par=ptxt.match(/\(.*\)/);
+ const name=box.firstChild.textContent.trim(),w=document.createElement('span');w.className='acts';
+ if(nums.length===1&&!/–/.test(ptxt))w.append(mk(name+(par?' '+par[0]:''),nums[0],'Add to order','add'));
+ else if(nums.length===2&&/mini/.test(ptxt)&&/regular/.test(ptxt))w.append(mk(name+' (mini)',nums[0],'Mini ₱'+nums[0],'add'),mk(name+' (regular)',nums[1],'Regular ₱'+nums[1],'add'));
+ else{const a=document.createElement('a');a.className='add ask';a.href=MSG;a.target='_blank';a.rel='noopener';a.textContent='Ask on Messenger';w.append(a)}
+ box.append(w)});
+document.querySelectorAll('main li').forEach(li=>{
+ const b=li.querySelector('b'),m=b&&b.textContent.match(/^₱(\d+)$/);if(!m)return;
+ const n=li.querySelector('.n'),sm=n.querySelector('small');
+ li.append(mk(n.firstChild.textContent.trim()+(sm?' ('+sm.textContent+')':''),+m[1],'+','plus'))});
+const tot=()=>{const a=Object.entries(cart);return{a,n:a.reduce((s,[,i])=>s+i.qty,0),t:a.reduce((s,[,i])=>s+i.qty*i.price,0)}};
+function render(){
+ const{a,n,t}=tot();
+ $('#bar').hidden=!n;if(!n)$('#cart').hidden=true;
+ document.body.classList.toggle('has-cart',!!n);
+ $('#view').textContent='Your order · '+n+' item'+(n>1?'s':'')+' · '+peso(t)+' ▴';
+ $('#items').innerHTML=a.map(([k,i])=>'<div class="ci"><span>'+i.name+'<small>'+peso(i.price)+' each</small></span><span class="q"><button type="button" data-k="'+encodeURIComponent(k)+'" data-d="-1" aria-label="Less">−</button>'+i.qty+'<button type="button" data-k="'+encodeURIComponent(k)+'" data-d="1" aria-label="More">+</button></span></div>').join('');
+ document.querySelectorAll('[data-add]').forEach(b=>{const q=(cart[decodeURIComponent(b.dataset.add)]||{}).qty;b.classList.toggle('on',!!q);b.textContent=q?'✓ '+q:b.dataset.label});
+}
+function toast(msg){const t=$('#toast');t.textContent=msg;t.hidden=false;clearTimeout(toast.id);toast.id=setTimeout(()=>t.hidden=true,4500)}
+document.addEventListener('click',e=>{
+ const a=e.target.closest('[data-add]');
+ if(a){const k=decodeURIComponent(a.dataset.add);(cart[k]=cart[k]||{name:a.dataset.n,price:+a.dataset.p,qty:0}).qty++;render();return}
+ const q=e.target.closest('[data-k]');
+ if(q){const k=decodeURIComponent(q.dataset.k);cart[k].qty+=+q.dataset.d;if(cart[k].qty<=0)delete cart[k];render()}
+});
+$('#view').onclick=()=>{$('#cart').hidden=!$('#cart').hidden};
+$('#send').onclick=async()=>{
+ const{a,t}=tot(),lines=a.map(([,i])=>'• '+i.qty+' × '+i.name+' — '+peso(i.qty*i.price));
+ const text="Hi Nicole's Frost & Flour! I'd like to order:\n"+lines.join('\n')+'\nTotal: '+peso(t)+'\n\nName:\nAddress:\nPick-up / Delivery / Meet halfway:\nPreferred weekend date/time:\nPayment (GCash / Maya / COD):';
+ try{await navigator.clipboard.writeText(text);toast('Order copied! Paste it in Messenger and send.')}
+ catch(e){$('#cart').hidden=false;let ta=$('#cart textarea');if(!ta){ta=document.createElement('textarea');ta.readOnly=true;$('#cart').append(ta)}ta.value=text;ta.select();toast('Copy your order text, then paste it in Messenger.')}
+ setTimeout(()=>window.open(MSG,'_blank','noopener'),1200);
+};
+})();
+</script>
+</body></html>
