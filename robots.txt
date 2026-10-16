@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /admin.html
+Sitemap: https://nicole-s-frost-flour.vercel.app/sitemap.xml
