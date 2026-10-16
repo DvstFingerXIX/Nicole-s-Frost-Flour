@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nicole's Frost &amp; Flour — Homemade Frozen Marinated Meats</title>
+<meta name="description" content="Homemade frozen marinated meats and ready-to-cook ulam since 2020. Bagnet, tapa, shanghai, chicken and more. Order via Messenger.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Nicole's Frost &amp; Flour">
+<meta property="og:locale" content="en_PH">
+<meta property="og:title" content="Nicole's Frost &amp; Flour — Ulam na agad!">
+<meta property="og:description" content="Homemade since 2020. Marinated, frozen, ready-to-cook. See the price list and order on Messenger.">
+<meta property="og:url" content="https://nicole-s-frost-flour.vercel.app/">
+<meta property="og:image" content="https://nicole-s-frost-flour.vercel.app/og-cover.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Nicole's Frost &amp; Flour — homemade frozen marinated meats">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://nicole-s-frost-flour.vercel.app/og-cover.jpg">
+<link rel="canonical" href="https://nicole-s-frost-flour.vercel.app/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="twitter:title" content="Nicole's Frost &amp; Flour — Ulam na agad!">
+<meta name="twitter:description" content="Homemade frozen marinated meats and ready-to-cook ulam since 2020. Order via Messenger.">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FoodEstablishment","name":"Nicole's Frost & Flour","description":"Homemade frozen marinated meats and ready-to-cook ulam since 2020: bagnet, tapa, shanghai, whole chicken, desserts and more.","url":"https://nicole-s-frost-flour.vercel.app/","image":"https://nicole-s-frost-flour.vercel.app/og-cover.jpg","logo":"https://nicole-s-frost-flour.vercel.app/img/logo.webp","foundingDate":"2020","servesCuisine":"Filipino","priceRange":"₱70–₱340","address":{"@type":"PostalAddress","addressLocality":"Quezon City","addressRegion":"Metro Manila","addressCountry":"PH"},"areaServed":"Quezon City","sameAs":["https://www.facebook.com/NicolesFrostandFlour"],"potentialAction":{"@type":"OrderAction","target":"https://m.me/NicolesFrostandFlour"}}</script>
+<meta name="theme-color" content="#12304a">
+<link rel="icon" type="image/png" href="img/favicon.png"><link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preconnect" href="https://qprzaugunvbqumumsnqi.supabase.co"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;800&family=Figtree:wght@400;600&display=swap">
+<style>
+:root{--bg:#eaf3f8;--card:#fff;--ink:#12304a;--mute:#5d7488;--line:#b9d2e2;--berry:#c2415d;--chip:#d6e8f3;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1f2e;--card:#162c40;--ink:#e6f1f8;--mute:#93abbd;--line:#2d4a63;--berry:#ff7b96;--chip:#1f3b53}}
+:root[data-theme="dark"]{--bg:#0e1f2e;--card:#162c40;--ink:#e6f1f8;--mute:#93abbd;--line:#2d4a63;--berry:#ff7b96;--chip:#1f3b53}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.4 Figtree,system-ui,sans-serif}
+header{padding:40px 20px 24px;max-width:1000px;margin:auto}
+h1{font:800 clamp(2rem,6vw,3.4rem)/1 'Bricolage Grotesque',Georgia,sans-serif;margin:0 0 8px;letter-spacing:-.02em}
+header p{margin:4px 0;color:var(--mute)}
+.gift{display:inline-block;margin-top:12px;background:var(--berry);color:#fff;padding:8px 14px;border-radius:999px;font-weight:600;font-size:.95rem}
+input{width:100%;padding:10px 14px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink);font:inherit;margin-bottom:8px}
+.chips{display:flex;gap:6px;overflow-x:auto;padding-bottom:2px}
+.chips a{flex:none;background:var(--chip);color:var(--ink);text-decoration:none;padding:5px 12px;border-radius:999px;font-size:.85rem}
+main{max-width:1000px;margin:auto;padding:12px 20px 60px;columns:2 400px;column-gap:20px}
+section{break-inside:avoid;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:0 0 20px}
+h2{font:800 1.25rem 'Bricolage Grotesque',Georgia,sans-serif;margin:0 0 2px}
+.note{color:var(--mute);font-size:.85rem;margin:0 0 8px}
+ul{list-style:none;margin:8px 0 0;padding:0}
+li{display:flex;align-items:baseline;gap:8px;padding:5px 0}
+li .n{flex:0 1 auto}
+li small{color:var(--mute)}
+li i{flex:1;border-bottom:2px dotted var(--line);min-width:12px;transform:translateY(-3px)}
+li b{color:var(--berry);font-weight:600;white-space:nowrap}
+.hide{display:none}
+footer{text-align:center;color:var(--mute);font-size:.85rem;padding:0 20px 40px}
+.order{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:10;display:flex;align-items:center;gap:8px;background:#0084ff;color:#fff;text-decoration:none;font-weight:600;padding:12px 18px;border-radius:999px;box-shadow:0 4px 14px rgba(0,0,0,.25)}
+.order svg{width:20px;height:20px;fill:#fff}
+.order:focus-visible{outline:3px solid var(--berry);outline-offset:2px}
+.hbtn{display:inline-block;margin:12px 0 0 8px;background:#0084ff;color:#fff;text-decoration:none;padding:8px 14px;border-radius:999px;font-weight:600;font-size:.95rem}
+#photos{max-width:1000px;margin:auto;padding:8px 20px 0}
+#photos h2{margin-bottom:10px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+.pc{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+.pc button{border:0;padding:0;background:var(--chip);cursor:zoom-in;display:block;width:100%}
+.pc img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block}
+.pc div{padding:8px 10px 10px;font-size:.88rem;line-height:1.3}
+.pc b{display:block;color:var(--berry);margin-top:3px}
+.pc small{color:var(--mute);display:block}
+#lb{position:fixed;inset:0;z-index:20;background:rgba(5,15,25,.9);display:none;align-items:center;justify-content:center;flex-direction:column;gap:12px;padding:16px;padding-top:calc(16px + env(safe-area-inset-top,0px))}
+#lb.on{display:flex}
+#lb img{max-width:100%;max-height:78%;border-radius:10px}
+#lb span{color:#fff;font-weight:600;text-align:center}
+#lb a{background:#0084ff;color:#fff;text-decoration:none;padding:10px 18px;border-radius:999px;font-weight:600}
+.cover{width:100%;background:#0b0b0b;line-height:0}
+.cover img{display:block;width:100%;max-width:1200px;margin:auto;height:auto;}
+.eyebrow{font-size:.95rem;font-weight:600;color:var(--mute);margin:0 0 8px}
+h1 span{display:block;font-size:.5em;color:var(--berry);margin-top:10px;letter-spacing:0;line-height:1.15}
+.sub{max-width:38ch;margin:0 0 18px;font-size:1.05rem}
+.cta{display:flex;gap:10px;flex-wrap:wrap}
+.btn{padding:12px 22px;border-radius:999px;font-weight:600;text-decoration:none;min-height:44px;display:inline-flex;align-items:center}
+.btn.fb{background:#0084ff;color:#fff}
+.btn.ghost{border:2px solid var(--ink);color:var(--ink)}
+.hchips{display:flex;gap:8px;flex-wrap:wrap;list-style:none;padding:0;margin:16px 0 0}
+.hchips li{background:var(--chip);padding:6px 12px;border-radius:999px;font-size:.85rem}
+.upd{font-size:.8rem;color:var(--mute);margin:12px 0 0}
+.add,.plus{border:0;cursor:pointer;font:inherit;font-weight:600}
+.acts{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+.add{background:var(--ink);color:var(--bg);border-radius:999px;padding:9px 12px;min-height:40px;font-size:.82rem;text-decoration:none;display:inline-flex;align-items:center}
+.add.ask{background:var(--chip);color:var(--ink)}
+.add.on,.plus.on{background:var(--berry);color:#fff}
+.plus{flex:none;min-width:40px;height:34px;border-radius:999px;background:var(--ink);color:var(--bg);font-size:1.05rem;margin:-4px 0}
+body.has-cart{padding-bottom:76px}
+body.has-cart .order{display:none}
+#bar{position:fixed;left:0;right:0;bottom:0;z-index:30;display:flex;justify-content:space-between;align-items:center;gap:10px;background:var(--ink);color:var(--bg);padding:10px 14px calc(10px + env(safe-area-inset-bottom,0px))}
+#bar[hidden],#cart[hidden],#toast[hidden]{display:none}
+#view{background:none;border:0;color:inherit;font:inherit;font-weight:600;text-align:left;padding:8px 0;min-height:44px;cursor:pointer}
+#send{background:#0084ff;color:#fff;border:0;border-radius:999px;padding:12px 16px;font:inherit;font-weight:600;min-height:44px;cursor:pointer}
+#cart{position:fixed;left:0;right:0;bottom:calc(66px + env(safe-area-inset-bottom,0px));z-index:29;max-height:50vh;overflow:auto;background:var(--card);border-top:1px solid var(--line);padding:8px 16px;box-shadow:0 -6px 20px rgba(0,0,0,.2)}
+.ci{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid var(--line)}
+.ci small{display:block;color:var(--mute)}
+.q{display:flex;align-items:center;gap:10px;font-weight:600;white-space:nowrap}
+.q button{width:36px;height:36px;border-radius:50%;border:1px solid var(--line);background:var(--chip);color:var(--ink);font-size:1.1rem;cursor:pointer}
+#cart textarea{width:100%;min-height:120px;margin-top:8px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);font:inherit;padding:8px}
+#toast{position:fixed;left:16px;right:16px;bottom:calc(84px + env(safe-area-inset-bottom,0px));z-index:40;background:#111;color:#fff;padding:12px 16px;border-radius:10px;text-align:center}
+#info{max-width:1000px;margin:0 auto;padding:4px 20px 20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.ic{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+.ic b{display:block;margin-bottom:4px}
+.ic p{margin:0;color:var(--mute);font-size:.92rem;line-height:1.45}
+.ic strong{color:var(--ink)}
+[hidden]{display:none!important}
+:focus-visible{outline:3px solid var(--berry);outline-offset:2px}
+.cut .pc:nth-child(n+13){display:none}
+.morebtn{display:block;margin:16px auto 0;background:var(--chip);color:var(--ink);border:0;border-radius:999px;padding:12px 22px;font:inherit;font-weight:600;min-height:44px;cursor:pointer}
+#empty{max-width:1000px;margin:0 auto;padding:24px 20px;text-align:center;color:var(--mute)}
+#empty a{color:var(--berry);font-weight:600}
+#lb .x{position:absolute;top:calc(8px + env(safe-area-inset-top,0px));right:10px;width:44px;height:44px;border:0;border-radius:50%;background:rgba(255,255,255,.15);color:#fff;font-size:1.6rem;cursor:pointer}
+#photos{padding-bottom:24px}
+footer{padding-bottom:96px}
+body.noscroll{overflow:hidden}
+#co{position:fixed;inset:0;z-index:50;background:rgba(5,15,25,.65);display:flex;align-items:flex-end;justify-content:center}
+.cobox{position:relative;background:var(--card);color:var(--ink);width:100%;max-width:520px;max-height:92vh;overflow:auto;border-radius:18px 18px 0 0;padding:20px 18px calc(20px + env(safe-area-inset-bottom,0px))}
+@media(min-width:640px){#co{align-items:center}.cobox{border-radius:18px}}
+.coclose{position:absolute;top:6px;right:8px;width:44px;height:44px;border:0;background:none;color:var(--ink);font-size:1.8rem;cursor:pointer}
+.cobox h2{margin:0 44px 10px 0;font-size:1.3rem}
+#cosum{list-style:none;margin:0 0 14px;padding:10px 12px;background:var(--bg);border-radius:10px;font-size:.9rem}
+#cosum li{display:flex;justify-content:space-between;gap:10px;padding:3px 0}
+#cosum .tt{border-top:1px solid var(--line);margin-top:4px;padding-top:6px;font-weight:600}
+#coform label.f,#coform fieldset{display:block;margin:0 0 12px;border:0;padding:0}
+.f>span,#coform legend{display:block;font-weight:600;font-size:.9rem;margin-bottom:4px;padding:0}
+#coform input:not([type=radio]),#coform select,#coform textarea,#cotext{width:100%;font:inherit;font-size:16px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink);margin:0}
+#coform input[type=radio]{width:auto;margin:0;padding:0}
+.rd{display:inline-flex;align-items:center;gap:6px;margin-right:14px;min-height:40px}
+.help{font-size:.82rem;color:var(--mute);margin:2px 0 0}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:10px;align-items:end}
+.cosubmit{display:flex;align-items:center;justify-content:center;width:100%;background:#0084ff;color:#fff;border:0;border-radius:999px;padding:14px;font:inherit;font-weight:600;min-height:48px;cursor:pointer;text-decoration:none;margin-top:6px}
+.row2{display:flex;gap:8px;margin-top:8px}
+.alt{flex:1;background:var(--chip);color:var(--ink);border:0;border-radius:999px;padding:12px;font:inherit;font-weight:600;min-height:44px;cursor:pointer}
+.lnk{width:100%;background:none;border:0;color:var(--mute);text-decoration:underline;font:inherit;margin-top:6px;min-height:44px;cursor:pointer}
+
+h1{font-size:clamp(2.7rem,10vw,5.4rem);line-height:.95}
+.hero{background:radial-gradient(700px 360px at 88% 0,#2f6a96 0,transparent 65%),radial-gradient(500px 300px at 0 100%,#1d4a6e 0,transparent 70%),#0a1a29;color:#fff;border-radius:0 0 32px 32px;overflow:hidden}
+.hero header{padding:56px 20px 16px}
+.hero header p{color:#b9d6ea}.hero .eyebrow{color:#8fc3e6}
+.hero h1 span{color:#ff9fb4;font-size:.42em;margin-top:14px}
+.hero .sub{color:#e6f1f8;font-size:1.15rem;max-width:34ch}
+.hero .btn{min-height:50px;padding:14px 26px;font-size:1.02rem}
+.hero .btn.fb{box-shadow:0 8px 24px rgba(0,132,255,.4)}
+.hero .btn.ghost{border-color:#8fc3e6;color:#fff}
+.hero .hchips li{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:#fff}
+.hero .cover{background:none;margin-top:8px}
+.hero .cover img{-webkit-mask-image:linear-gradient(transparent,#000 25%,#000 88%,transparent);mask-image:linear-gradient(transparent,#000 25%,#000 88%,transparent)}
+#info{margin-top:28px}
+.ic{border-left:5px solid var(--berry);border-radius:6px 14px 14px 6px}
+.ic b{font:800 1.05rem 'Bricolage Grotesque',Georgia,sans-serif}
+.chips a{font-weight:600;transition:background .15s,color .15s}
+.chips a:hover{background:var(--ink);color:var(--bg)}
+section{border-top:5px solid var(--chip);box-shadow:0 6px 18px rgba(18,48,74,.07)}
+h2{font-size:1.45rem;letter-spacing:-.01em}
+li b{font:800 1.05rem 'Bricolage Grotesque',Georgia,sans-serif}
+section.star{border-top-color:var(--berry);background:linear-gradient(var(--card),var(--card)) padding-box,linear-gradient(135deg,#ff9fb4,#c2415d) border-box;border:2px solid transparent}
+.bs{display:inline-block;vertical-align:middle;background:var(--berry);color:#fff;font:600 .72rem Figtree,sans-serif;padding:3px 9px;border-radius:999px;margin-left:6px}
+#photos h2{font-size:1.8rem}
+.pc{transition:transform .15s}.pc:hover{transform:translateY(-3px)}
+.pc b{font:800 1.1rem 'Bricolage Grotesque',Georgia,sans-serif}
+@media(prefers-reduced-motion:reduce){.pc{transition:none}.pc:hover{transform:none}}
+.fl{display:block;margin-top:2px;font-size:.8rem;line-height:1.3}
+#reviews{max-width:1000px;margin:8px auto 0;padding:0 20px 8px}
+#reviews h2{font-size:1.8rem}
+.rv{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-top:12px}
+.rc{margin:0;background:var(--card);border-radius:16px;padding:18px;box-shadow:0 6px 18px rgba(18,48,74,.07);border-top:4px solid var(--berry)}
+.rc .stars{color:var(--berry);letter-spacing:2px;font-size:1.1rem}
+.rc blockquote{margin:8px 0 12px;line-height:1.45}
+.rc figcaption{color:var(--mute);font-size:.9rem}
+li.sold{opacity:.55}li.sold .n{text-decoration:line-through}li.sold b{font-weight:600;color:var(--mute)}
+.pc.sold img{filter:grayscale(1);opacity:.6}.pc.sold b{color:var(--mute);font-weight:600}
+#banner{background:var(--berry);color:#fff;text-align:center;padding:10px 16px;font-weight:600}
+.rimg{width:100%;border-radius:10px;margin:10px 0 0;display:block}
+#dphotos{max-width:1000px;margin:auto;padding:12px 20px 0}
+#dphotos .dc{background:var(--card);border:1px solid var(--line);border-top:5px solid var(--berry);border-radius:14px;padding:16px 18px 10px;box-shadow:0 6px 18px rgba(18,48,74,.07)}
+#dphotos h2{margin:0 0 2px;font-size:1.45rem}
+#dphotos .dsub{display:flex;justify-content:space-between;gap:4px 12px;flex-wrap:wrap;color:var(--mute);font-size:.85rem;margin:0 0 12px}
+#dphotos .dsub a{color:var(--berry);font-weight:600;text-decoration:none}
+.dstrip{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x proximity;padding-bottom:10px}
+.dstrip .pc{flex:0 0 158px;scroll-snap-align:start}
+.pc.hide{display:none}
+.pc .add{background:var(--ink);color:var(--bg);padding:9px 12px;width:auto;display:inline-flex;cursor:pointer}
+.pc .add.on{background:var(--berry);color:#fff}
+.pc img{height:auto}
+/* ===== Asymmetric layout (delete this block to go back to the symmetric look) ===== */
+.hero{border-radius:0;padding-bottom:40px;clip-path:polygon(0 0,100% 0,100% calc(100% - 40px),0 100%)}
+section{border-radius:30px 8px 30px 8px}
+main section:nth-of-type(even){border-radius:8px 30px 8px 30px;margin-left:16px}
+main section:nth-of-type(odd){margin-right:16px}
+main section:not(.star):nth-of-type(odd){border-left:6px solid var(--chip)}
+main section:not(.star):nth-of-type(even){border-right:6px solid var(--chip)}
+#dphotos .dc{border-radius:36px 10px 36px 10px;margin-right:clamp(0px,6vw,60px)}
+#g .pc:first-child{grid-column:span 2}
+#g .pc:nth-child(even){margin-top:18px}
+@media(min-width:820px){main section:nth-of-type(even){margin-left:34px}main section:nth-of-type(odd){margin-right:0}}
+
+/* ===== Premium navigation, mega menu & footer ===== */
+html{scroll-padding-top:84px}
+.sh{position:sticky;top:0;z-index:15;background:var(--bg);background:color-mix(in srgb,var(--bg) 90%,transparent);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px);transition:box-shadow .2s}
+.sh.sc{box-shadow:0 8px 28px rgba(18,48,74,.14)}
+.shin{max-width:1180px;margin:auto;height:68px;padding:0 16px;display:flex;align-items:center;gap:4px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);margin-right:auto;min-width:0}
+.brand img{height:54px;width:auto;flex:none;filter:drop-shadow(0 2px 3px rgba(10,26,41,.3))}
+.brand b{display:block;font:800 1.08rem/1.05 'Bricolage Grotesque',Georgia,sans-serif;letter-spacing:-.01em;white-space:nowrap}
+.brand small{display:block;color:var(--mute);font-size:.74rem;margin-top:2px}
+.mn{display:none;align-items:center;gap:2px;margin-right:auto}
+.ni{appearance:none;background:none;border:0;font:600 .95rem Figtree,system-ui,sans-serif;color:var(--ink);padding:0 14px;border-radius:999px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:6px;min-height:44px;transition:background .15s}
+.ni:hover,.ni[aria-expanded=true]{background:var(--chip)}
+.ni svg{width:14px;height:14px;transition:transform .2s}
+.ni[aria-expanded=true] svg{transform:rotate(180deg)}
+.ib{width:44px;height:44px;border-radius:50%;border:0;background:none;color:var(--ink);cursor:pointer;display:grid;place-items:center;flex:none}
+.ib:hover,.ib[aria-expanded=true]{background:var(--chip)}
+.ib svg{width:21px;height:21px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.hcta{display:none;align-items:center;gap:8px;background:#0084ff;color:#fff;text-decoration:none;font-weight:600;padding:0 18px;min-height:44px;border-radius:999px;margin-left:6px;box-shadow:0 6px 18px rgba(0,132,255,.3)}
+.hcta svg{width:18px;height:18px;fill:#fff}
+.dd{position:relative}
+.pn{display:none;position:absolute;background:var(--card);color:var(--ink);box-shadow:0 24px 48px rgba(10,26,41,.22)}
+.pn.on{display:block;animation:pin .18s ease-out}
+@keyframes pin{from{opacity:0;transform:translateY(-6px)}}
+.mg{left:0;right:0;top:100%;border-bottom:1px solid var(--line)}
+.mgi{max-width:1180px;margin:auto;padding:28px 20px 26px;display:grid;grid-template-columns:repeat(3,1fr) 290px;gap:34px}
+.mgi h3{font:800 1.02rem 'Bricolage Grotesque',Georgia,sans-serif;margin:0 0 10px}
+.mgi h3::after{content:"";display:block;width:28px;height:3px;border-radius:3px;background:var(--berry);margin-top:6px}
+.mgi div>h3:not(:first-child){margin-top:24px}
+.ml{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:8px 10px;margin:0 -10px;border-radius:10px;color:var(--ink);text-decoration:none;font-weight:600;font-size:.94rem;line-height:1.25}
+.ml small{color:var(--mute);font-weight:400;font-size:.78rem;white-space:nowrap}
+.ml:hover{background:var(--chip)}.st{color:var(--berry)}
+.ft{position:relative;align-self:start;overflow:hidden;border-radius:30px 8px 30px 8px;background:#0a1a29;color:#fff}
+.ft img{display:block;width:100%;aspect-ratio:1/1;object-fit:cover}
+.ft .bs{position:absolute;top:12px;left:12px;margin:0}
+.ftb{padding:14px 16px 16px}
+.ftb b{display:block;font:800 1.1rem/1.15 'Bricolage Grotesque',Georgia,sans-serif}
+.ftb span{color:#ff9fb4;font-weight:600}
+.ftbtn{display:block;width:100%;margin-top:10px;border:0;border-radius:999px;background:#fff;color:#0a1a29;font:600 .92rem Figtree,sans-serif;min-height:42px;cursor:pointer}
+.ftbtn:hover{background:var(--chip)}
+.mgb{background:var(--chip);border-top:1px solid var(--line)}
+.mgbi{max-width:1180px;margin:auto;padding:12px 20px;display:flex;gap:8px 24px;flex-wrap:wrap;align-items:center;font-size:.88rem}
+.mgbi a{margin-left:auto;font-weight:600;color:var(--ink)}
+.dd .pn{left:0;top:calc(100% + 8px);width:370px;padding:8px;border:1px solid var(--line);border-radius:22px 8px 22px 8px}
+.r1{display:flex;gap:12px;align-items:flex-start;padding:12px;border-radius:14px;color:var(--ink);text-decoration:none}
+.r1:hover{background:var(--chip)}
+.ico{flex:none;width:40px;height:40px;border-radius:12px;background:var(--chip);display:grid;place-items:center;font-size:1.2rem}
+.r1:hover .ico{background:var(--card)}
+.r1 b{display:block;font:800 .98rem 'Bricolage Grotesque',Georgia,sans-serif}
+.r1 em{display:block;font-style:normal;color:var(--mute);font-size:.86rem;line-height:1.4}
+.ddf{margin:6px 4px 4px;padding:12px 14px;border-radius:14px;background:var(--ink);color:var(--bg);text-decoration:none;font-weight:600;display:flex;justify-content:space-between;align-items:center}
+.sp{left:0;right:0;top:100%;padding:18px 16px 20px;border-bottom:1px solid var(--line)}
+.spi{max-width:720px;margin:auto}
+.spi input{font-size:16px;padding:14px 18px;border-radius:999px;margin:0 0 12px}
+.sq{display:flex;gap:6px;flex-wrap:wrap}
+.sq button{border:0;background:var(--chip);color:var(--ink);font:600 .85rem Figtree,sans-serif;padding:0 14px;min-height:36px;border-radius:999px;cursor:pointer}
+.sq button:hover{background:var(--ink);color:var(--bg)}
+.scrim{position:fixed;inset:0;z-index:14;background:rgba(5,15,25,.45);opacity:0;pointer-events:none;transition:opacity .2s}
+.scrim.on{opacity:1;pointer-events:auto}
+.dr{position:fixed;inset:0;z-index:45}
+.drs{position:absolute;inset:0;background:rgba(5,15,25,.55)}
+.drp{position:absolute;right:0;top:0;bottom:0;width:min(92vw,400px);background:var(--bg);overflow:auto;padding:calc(12px + env(safe-area-inset-top,0px)) 18px calc(24px + env(safe-area-inset-bottom,0px));animation:sl .22s ease-out}
+@keyframes sl{from{transform:translateX(40px);opacity:0}}
+.drh{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.drp details{border-bottom:1px solid var(--line)}
+.drp summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;padding:14px 2px;min-height:48px;font:800 1.08rem 'Bricolage Grotesque',Georgia,sans-serif}
+.drp summary::-webkit-details-marker{display:none}
+.drp summary::after{content:"+";font-size:1.3rem;color:var(--berry)}
+.drp details[open] summary::after{content:"−"}
+.drp details .ml{margin:0 0 0 0;padding:10px}
+.drp .dl{display:flex;align-items:center;min-height:48px;padding:0 2px;border-bottom:1px solid var(--line);color:var(--ink);text-decoration:none;font:800 1.08rem 'Bricolage Grotesque',Georgia,sans-serif}
+.drp .hcta{display:flex;justify-content:center;margin:20px 0 0}
+@media(max-width:719px){.brand small{display:none}.brand b{font-size:1rem}}
+@media(max-width:519px){.shin .brand span{display:none}.brand img{height:50px}.drh .brand span{display:block}}
+@media(min-width:720px){.hcta{display:inline-flex}}
+@media(min-width:980px){.mn{display:flex}.brand{margin-right:24px}.burger{display:none}.shin{padding:0 20px}}
+@media(max-width:979px){.mg,.mn{display:none!important}}
+footer.sf{position:relative;margin-top:56px;background:radial-gradient(640px 320px at 92% 0,#1d4a6e 0,transparent 70%),#0a1a29;color:#b9d6ea;text-align:left;font-size:.95rem;padding:96px 0 0;clip-path:polygon(0 40px,100% 0,100% 100%,0 100%)}
+.sfi{max-width:1180px;margin:auto;padding:0 20px;display:grid;gap:36px;grid-template-columns:1fr}
+@media(min-width:620px){.sfi{grid-template-columns:1fr 1fr}.sfa{grid-column:1/-1}}
+@media(min-width:980px){.sfi{grid-template-columns:1.6fr 1fr 1.1fr 1fr}.sfa{grid-column:auto}}
+.sf h3{font:800 1.05rem 'Bricolage Grotesque',Georgia,sans-serif;color:#fff;margin:0 0 12px}
+.sf ul{margin:0}.sf li{display:block;padding:5px 0}
+.sf a{color:#b9d6ea;text-decoration:none}.sf a:hover{color:#fff;text-decoration:underline}
+.sf .big{font:800 clamp(1.9rem,4vw,2.5rem)/1 'Bricolage Grotesque',Georgia,sans-serif;color:#fff;margin:14px 0 8px}
+.sf .big span{display:block;font-size:.5em;color:#ff9fb4;margin-top:8px}
+.sf .fbrand{display:flex;gap:10px;align-items:center;color:#fff;font:800 1.1rem 'Bricolage Grotesque',Georgia,sans-serif}
+.sf .flogo{display:block;width:min(200px,60%);height:auto;filter:drop-shadow(0 6px 14px rgba(0,0,0,.35))}
+.sf .btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.sf .btn{min-height:44px;padding:0 20px}
+.sf .btn.fb,.sf .btn.fb:hover{color:#fff;text-decoration:none}
+.sf .btn.ghost{border-color:#8fc3e6;color:#fff}
+.sf .ld{display:block;color:#8fc3e6;font-size:.86rem;line-height:1.4}.sf li strong{color:#fff}
+.pay{display:flex;flex-wrap:wrap;gap:8px}
+.pay span{border:1px solid rgba(255,255,255,.25);padding:6px 12px;border-radius:999px;color:#fff;font-size:.85rem}
+.sfb{max-width:1180px;margin:48px auto 0;padding:18px 20px 96px;border-top:1px solid rgba(255,255,255,.14);display:flex;justify-content:space-between;gap:10px 20px;flex-wrap:wrap;font-size:.85rem;color:#8fc3e6}
+.hero header{padding-top:44px}
+@media(prefers-reduced-motion:reduce){.pn.on,.drp{animation:none}.scrim,.sh,.ni svg{transition:none}}
+/* ===== Even grid price list ===== */
+main{display:grid;columns:auto;grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-flow:row dense;gap:20px;align-items:stretch}
+main section{margin:0!important;border-radius:22px!important;break-inside:auto}
+main section:not(.star){border:1px solid var(--line)!important;border-top:5px solid var(--chip)!important}
+main section.wide{grid-column:1/-1}
+main section.wide ul{columns:2;column-gap:36px}
+main section.wide li{break-inside:avoid}
+@media(max-width:700px){main{grid-template-columns:1fr}main section.wide ul{columns:1}}
+/* ===== Holy grail: header / sidebar / 2-column content / footer ===== */
+.hg{max-width:1240px;margin:32px auto 0;padding:0 20px;display:grid;grid-template-columns:260px minmax(0,1fr);gap:28px;align-items:start}
+.hgm{min-width:0}
+.hgm>#info,.hgm>#dphotos,.hgm>main,.hgm>#empty,.hgm>#reviews,.hgm>#photos{max-width:none!important;margin-left:0!important;margin-right:0!important}
+.hgm>#info{margin-top:0!important;padding-left:0;padding-right:0}
+.hgm>#dphotos,.hgm>main,.hgm>#reviews,.hgm>#photos,.hgm>#empty{padding-left:0!important;padding-right:0!important}
+.hgm>#dphotos{padding-top:0;margin-bottom:20px!important}
+#dphotos .dc{margin-right:0!important;border-radius:22px!important}
+#g .pc:first-child{grid-column:auto!important}#g .pc:nth-child(even){margin-top:0!important}
+.sb{position:sticky;top:88px;max-height:calc(100vh - 108px);overflow:auto;background:var(--card);border:1px solid var(--line);border-top:5px solid var(--berry);border-radius:22px;padding:16px 14px 18px;scrollbar-width:thin}
+.sb h2{font:800 1.2rem 'Bricolage Grotesque',Georgia,sans-serif;margin:0 0 2px 6px}
+.sb h3{font:800 .92rem 'Bricolage Grotesque',Georgia,sans-serif;color:var(--mute);margin:16px 0 4px 6px}
+.sb .ml{margin:0;padding:7px 10px;font-size:.88rem}
+.sb .ml.on{background:var(--ink);color:var(--bg)}.sb .ml.on small{color:inherit;opacity:.8}.sb .ml.on .st{color:#ff9fb4}
+.sbc{margin-top:18px;padding:14px;border-radius:16px 6px 16px 6px;background:var(--chip);font-size:.88rem}
+.sbc b{display:block;font:800 1rem 'Bricolage Grotesque',Georgia,sans-serif;margin-bottom:4px}
+.sbc p{margin:0 0 10px;color:var(--mute)}
+.sbc .btn{min-height:42px;padding:0 16px;font-size:.9rem;width:100%;justify-content:center}
+@media(max-width:979px){
+.hg{grid-template-columns:minmax(0,1fr);gap:12px;margin-top:20px}
+.sb{top:calc(68px + env(safe-area-inset-top,0px));z-index:12;max-height:none;overflow:visible;margin:0 -20px;padding:8px 20px;border:0;border-bottom:1px solid var(--line);border-radius:0;background:var(--bg);background:color-mix(in srgb,var(--bg) 92%,transparent);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+.sb h2,.sb h3,.sb small,.sbc{display:none}
+.sbl{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none}.sbl::-webkit-scrollbar{display:none}
+.sb .ml{flex:none;white-space:nowrap;background:var(--chip);border-radius:999px;padding:8px 14px}
+}
+/* ===== Hero: product spread as a faded background ===== */
+.hero{position:relative;isolation:isolate}
+.hero .cover{position:absolute;inset:0;z-index:-1;margin:0;background:none;line-height:0;overflow:hidden}
+.hero .cover img{display:block;width:100%;height:100%;max-width:none;margin:0;object-fit:cover;object-position:center 78%;opacity:.42;-webkit-mask-image:none;mask-image:none}
+.hero .cover::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,26,41,.94) 0,rgba(10,26,41,.7) 45%,rgba(10,26,41,.3) 100%),linear-gradient(180deg,rgba(10,26,41,.5) 0,transparent 30%,rgba(10,26,41,.55) 100%)}
+@media(max-width:719px){.hero .cover img{opacity:.35}.hero .cover::after{background:linear-gradient(180deg,rgba(10,26,41,.85) 0,rgba(10,26,41,.72) 60%,rgba(10,26,41,.6) 100%)}}
+/* ===== Cart badge, cut-off notice, share button ===== */
+.ib{position:relative}
+.cn{position:absolute;top:3px;right:1px;min-width:18px;height:18px;padding:0 5px;border-radius:9px;background:var(--berry);color:#fff;font:700 .7rem/18px Figtree,sans-serif;text-align:center}
+.cutoff{display:inline-flex;align-items:center;gap:8px;margin:14px 0 0;padding:8px 14px;border-radius:999px;background:rgba(255,159,180,.14);border:1px solid rgba(255,159,180,.45);color:#ffd3dd;font-size:.9rem;font-weight:600}
+.cutoff::before{content:"";width:8px;height:8px;border-radius:50%;background:#ff9fb4;flex:none}
+.dlpl{display:flex;align-items:center;justify-content:center;gap:6px;min-height:42px;margin-top:8px;border:2px solid var(--ink);border-radius:999px;color:var(--ink);text-decoration:none;font:600 .9rem Figtree,sans-serif}
+.dlpl:hover{background:var(--ink);color:var(--bg)}
+.sf .dlpl{display:inline;min-height:0;margin:0;border:0;border-radius:0;color:#b9d6ea;font:inherit;text-decoration:none}
+.drp .dlpl.dl{justify-content:flex-start;border:0;border-bottom:1px solid var(--line);border-radius:0;margin:0;min-height:48px;padding:0 2px;font:800 1.08rem 'Bricolage Grotesque',Georgia,sans-serif}
+.drp .dlpl.dl:hover{background:none;color:var(--ink)}
+</style><script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)}</script><script defer src="/_vercel/insights/script.js"></script>
+</head><body>
+<div id="banner" role="status" hidden></div>
+<span id="top"></span>
+<div class="sh" id="sh"><div class="shin">
+<a class="brand" href="#top" aria-label="Nicole's Frost &amp; Flour, home"><img src="img/logo-sm.webp" alt="" width="66" height="56"><span><b>Nicole's Frost &amp; Flour</b><small>Homemade since 2020</small></span></a>
+<nav class="mn" aria-label="Main">
+<div id="wMega"><button class="ni" id="bMega" type="button" aria-expanded="false" aria-controls="pMega">Menu<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="pn mg" id="pMega"></div></div>
+<a class="ni ldes" href="#m" hidden>Desserts</a>
+<div class="dd" id="wOrd"><button class="ni" id="bOrd" type="button" aria-expanded="false" aria-controls="pOrd">How to order<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><div class="pn" id="pOrd"></div></div>
+<a class="ni" href="#photos">Photos</a><a class="ni lrv" href="#reviews" hidden>Reviews</a>
+</nav>
+<button class="ib" id="bSrch" type="button" aria-label="Search the menu" aria-expanded="false" aria-controls="pSrch"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
+<button class="ib" id="bTheme" type="button" aria-label="Switch light or dark mode"><svg viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+<a class="hcta" href="https://m.me/NicolesFrostandFlour" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.15 2 11.27c0 2.9 1.45 5.48 3.72 7.17V22l3.4-1.87c.9.25 1.86.39 2.88.39 5.52 0 10-4.15 10-9.27S17.52 2 12 2zm1.03 12.49-2.55-2.72-4.97 2.72 5.47-5.8 2.61 2.72 4.91-2.72-5.47 5.8z"/></svg>Order on Messenger</a>
+<button class="ib" id="bCart" type="button" aria-label="View your order"><svg viewBox="0 0 24 24"><path d="M6 6h15l-1.6 9H8z"/><path d="M6 6 5 3H2"/><circle cx="9" cy="20" r="1.3"/><circle cx="18" cy="20" r="1.3"/></svg><span class="cn" id="cartN" hidden>0</span></button>
+<button class="ib burger" id="bBurger" type="button" aria-label="Open menu"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+</div>
+<div class="pn sp" id="pSrch"><div class="spi"><input id="q" type="search" aria-label="Search the menu" placeholder="Search the menu (e.g. tapa, bagnet, chicken)" autocomplete="off"><div class="sq"><button type="button">tapa</button><button type="button">bagnet</button><button type="button">chicken</button><button type="button">shanghai</button><button type="button">graham</button><button type="button">ribs</button></div></div></div>
+</div>
+<div class="scrim" id="scrim"></div>
+<div class="dr" id="dr" hidden><div class="drs"></div><div class="drp" role="dialog" aria-modal="true" aria-label="Site menu"><div class="drh"><a class="brand" href="#top"><img src="img/logo-sm.webp" alt="" width="66" height="56"><span><b>Nicole's Frost &amp; Flour</b></span></a><button class="ib" id="bClose" type="button" aria-label="Close menu"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div><div id="drb"></div><a class="hcta" href="https://m.me/NicolesFrostandFlour" target="_blank" rel="noopener">Order on Messenger</a></div></div>
+<div class="hero"><header>
+<h1>Ulam na agad.<span>Marinated, frozen, ready-to-cook.</span></h1>
+<p class="sub">Bagnet, tapa, shanghai, whole chicken at marami pang iba, gawa sa bahay at bagong balot.</p>
+<div class="cta"><a class="btn fb" href="https://m.me/NicolesFrostandFlour" target="_blank" rel="noopener">Order on Messenger</a><a class="btn ghost" href="#m">See price list</a></div>
+<ul class="hchips"><li>🎁 Free ham bag with every combo</li><li>❄️ Packed frozen, ready-to-cook</li><li>🚚 Free delivery in Quezon City</li></ul>
+<p class="cutoff" id="cutoff" hidden></p>
+<p class="upd">Price list · Updated Sept 25, 2026</p>
+</header>
+<div class="cover"><img src="img/cover.webp" srcset="img/cover-sm.webp 800w, img/cover.webp 1167w" sizes="100vw" width="1167" height="600" decoding="async" fetchpriority="low" alt=""></div>
+</div>
+<div class="hg"><aside class="sb" id="sb" aria-label="Price list sections"></aside><div class="hgm">
+<section id="info" aria-label="How to order">
+<div class="ic"><b>📅 How to order</b><p>Order on <strong>weekdays</strong>.<br>We deliver on <strong>weekends</strong>.</p></div>
+<div class="ic"><b>🚚 Pick-up or delivery</b><p><strong>Free delivery</strong> within Quezon City.<br>Meet-halfway and pick-up also available.</p></div>
+<div class="ic"><b>💳 Payment</b><p>GCash · Maya · Bank transfer · Cash on delivery</p></div>
+</section>
+<div class="chips" id="chips" hidden></div>
+<div id="lb" role="dialog" aria-modal="true" aria-label="Photo"><button type="button" class="x" aria-label="Close photo">×</button><img alt=""><span></span><a href="https://m.me/NicolesFrostandFlour" target="_blank" rel="noopener">Order on Messenger</a></div>
+<div id="dphotos" hidden><div class="dc"><h2>🍰 Desserts</h2><p class="dsub"><span id="dsub"></span><a id="dlink" href="#m">See dessert prices ↓</a></p><div class="dstrip" id="gd"></div></div></div>
+<main id="m"><!--PRERENDER:START-->
+<section id="s0" class="star"><h2>Marinated Chicken <span class="bs">★ Bestseller</span></h2><ul><li class="hasfl"><span class="n">Buy 1 take 2 (3 packs, 400g each)<small class="fl">Choose from: Chicken flavors, Inasal, Jollychicken, Chinese style, Savory, Spicy buffalo, Korean soy garlic, Honey BBQ, Teriyaki, McSpicy, Kentucky, Tokyo</small></span><i></i><b>₱145</b></li><li class="hasfl"><span class="n">Buy 1 take 1 (2 packs, 400g each)<small class="fl">Choose from: Chicken flavors, Inasal, Jollychicken, Chinese style, Savory, Spicy buffalo, Korean soy garlic, Honey BBQ, Teriyaki, McSpicy, Kentucky, Tokyo</small></span><i></i><b>₱115</b></li><li class="hasfl"><span class="n">Regular pack, 700–800g<small class="fl">Choose from: Chicken flavors, Inasal, Jollychicken, Chinese style, Savory, Spicy buffalo, Korean soy garlic, Honey BBQ, Teriyaki, McSpicy, Kentucky, Tokyo</small></span><i></i><b>₱110</b></li></ul></section>
+<section id="s1"><h2>Desserts · Graham &amp; Floats</h2><ul><li><span class="n">Mango Graham</span><i></i><b>₱105</b></li><li><span class="n">Rocky Road Graham</span><i></i><b>₱105</b></li><li><span class="n">Oreo Graham</span><i></i><b>₱105</b></li><li><span class="n">Double Dutch Graham</span><i></i><b>₱105</b></li><li><span class="n">Tiramisu Graham</span><i></i><b>₱100</b></li><li><span class="n">Coffee Crumble Float</span><i></i><b>₱105</b></li><li><span class="n">Biscoff Float</span><i></i><b>₱115</b></li><li><span class="n">Kit Kat Wafer Float</span><i></i><b>₱115</b></li><li><span class="n">Fruit Cocktail Graham</span><i></i><b>₱115</b></li><li><span class="n">Avocado De Leche</span><i></i><b>₱115</b></li><li><span class="n">Graham De Leche</span><i></i><b>₱110</b></li><li><span class="n">Graham Ube De Leche</span><i></i><b>₱115</b></li></ul></section>
+<section id="s2"><h2>Desserts · Cheesecakes</h2><ul><li><span class="n">Mango Cheesecake</span><i></i><b>₱115</b></li><li><span class="n">Strawberry Cheesecake</span><i></i><b>₱115</b></li><li><span class="n">Blueberry Cheesecake</span><i></i><b>₱115</b></li></ul></section>
+<section id="s3"><h2>Desserts · Flan, Cake &amp; More</h2><ul><li><span class="n">Leche Flan</span><i></i><b>₱100</b></li><li><span class="n">Dream Cake</span><i></i><b>₱115</b></li><li><span class="n">Cheesy Ube Pastillas</span><i></i><b>₱115</b></li></ul></section>
+<section id="s4"><h2>Hams & Combos</h2><p class="note">Free ham bag with all combos</p><ul><li><span class="n">B1T1 Ballham</span><i></i><b>₱135</b></li><li><span class="n">Ham, 1 pc (900g–1kg)</span><i></i><b>₱135</b></li><li><span class="n">Combo: Ham + mini roll</span><i></i><b>₱180</b></li><li><span class="n">Combo: Whole chicken + mini ham</span><i></i><b>₱195</b></li><li><span class="n">Combo: Whole chicken + mini roll</span><i></i><b>₱235</b></li><li><span class="n">Combo: BBQ ribs + ham</span><i></i><b>₱165</b></li><li><span class="n">Combo: BBQ ribs + mini roll</span><i></i><b>₱205</b></li><li><span class="n">Combo: BBQ stick + ham</span><i></i><b>₱185</b></li><li><span class="n">Combo: BBQ + roll</span><i></i><b>₱225</b></li><li><span class="n">Combo: Whole chicken cordon + ham</span><i></i><b>₱210</b></li><li><span class="n">Combo: Whole chicken cordon + roll</span><i></i><b>₱250</b></li></ul></section>
+<section id="s5"><h2>Lechon Rolls</h2><ul><li><span class="n">Lechon roll, original</span><i></i><b>₱190</b></li><li><span class="n">Lechon de Cebu roll</span><i></i><b>₱190</b></li><li><span class="n">Lechon roll, spicy</span><i></i><b>₱190</b></li><li><span class="n">Mini single roll</span><i></i><b>₱125</b></li><li><span class="n">B1T1 mini roll (free ham bag)</span><i></i><b>₱220</b></li><li><span class="n">Mini twin roll</span><i></i><b>₱200</b></li><li><span class="n">Mini chick roll</span><i></i><b>₱190</b></li><li><span class="n">Regular twin roll</span><i></i><b>₱340</b></li><li><span class="n">Regular chick roll</span><i></i><b>₱290</b></li></ul></section>
+<section id="s6"><h2>Shanghai & Homemade Favorites</h2><p class="note">Less ₱5 each when you order 10 pcs or more</p><ul><li><span class="n">Pork shanghai</span><i></i><b>₱120</b></li><li><span class="n">Cheesy pork shanghai</span><i></i><b>₱130</b></li><li><span class="n">Ham w/ cheese shanghai</span><i></i><b>₱130</b></li><li><span class="n">Chinese shanghai</span><i></i><b>₱130</b></li><li><span class="n">Dynamite shanghai</span><i></i><b>₱130</b></li><li><span class="n">Dynamite shanghai, with cheese</span><i></i><b>₱135</b></li><li><span class="n">Cheesy beef cream &amp; mushroom shanghai</span><i></i><b>₱135</b></li><li><span class="n">Cheesy bangus shanghai</span><i></i><b>₱130</b></li><li><span class="n">Beef jalapeño shanghai</span><i></i><b>₱135</b></li><li><span class="n">Chicken ala king shanghai</span><i></i><b>₱130</b></li><li><span class="n">Cheeseburger springroll</span><i></i><b>₱135</b></li><li><span class="n">Chicken cordon bleu by3</span><i></i><b>₱90</b></li><li><span class="n">Chicken cordon bleu promax</span><i></i><b>₱90</b></li><li><span class="n">Pork cordon bleu by3</span><i></i><b>₱90</b></li><li><span class="n">Pork cordon bleu promax</span><i></i><b>₱90</b></li><li><span class="n">Cheesy embotido by5</span><i></i><b>₱90</b></li><li><span class="n">Cheesy embotido promax</span><i></i><b>₱90</b></li><li><span class="n">Pork galantina 5in1</span><i></i><b>₱100</b></li><li><span class="n">Pork galantina promax</span><i></i><b>₱100</b></li><li><span class="n">Morcon 5in1</span><i></i><b>₱100</b></li><li><span class="n">Morcon promax</span><i></i><b>₱100</b></li><li><span class="n">Hardenera (everlasting)</span><i></i><b>₱115</b></li><li><span class="n">Homemade Jobee spaghetti sauce</span><i></i><b>₱145</b></li><li><span class="n">Special pork sisig</span><i></i><b>₱125</b></li></ul></section>
+<section id="s7"><h2>Chicharon Bulaklak</h2><p class="note">Plain or spicy — same price</p><ul><li><span class="n">Buy 1 take 2, 400g</span><i></i><b>₱160</b></li><li><span class="n">Buy 1 take 1, 400g</span><i></i><b>₱125</b></li><li><span class="n">700g</span><i></i><b>₱120</b></li></ul></section>
+<section id="s8"><h2>Tapa, Tocino & Bagnet Deals</h2><ul><li><span class="n">B1T2 garlic tapa (200–300g)</span><i></i><b>₱170</b></li><li><span class="n">B1T2 premium tocino (200–300g)</span><i></i><b>₱170</b></li><li><span class="n">Special pork tocino (400–500g)</span><i></i><b>₱130</b></li><li><span class="n">B1T2 liempo sliced inasal (3 packs)</span><i></i><b>₱170</b></li><li><span class="n">B1T2 Baliwag bagnet</span><i></i><b>₱170</b></li><li><span class="n">B1T2 litson bites</span><i></i><b>₱170</b></li><li><span class="n">B1T2 bagnet</span><i></i><b>₱170</b></li></ul></section>
+<section id="s9"><h2>Chicken Bites</h2><p class="note">400–500g</p><ul><li><span class="n">Lemon teriyaki</span><i></i><b>₱105</b></li><li><span class="n">Honey garlic</span><i></i><b>₱105</b></li><li><span class="n">Korean fried</span><i></i><b>₱105</b></li><li><span class="n">Sweet &amp; spicy</span><i></i><b>₱105</b></li></ul></section>
+<section id="s10"><h2>Marinated Whole Chicken</h2><p class="note">600–700g</p><ul><li><span class="n">Roasters whole chicken</span><i></i><b>₱150</b></li><li><span class="n">Chooks whole chicken</span><i></i><b>₱150</b></li><li><span class="n">Baliwag whole chicken</span><i></i><b>₱150</b></li><li><span class="n">Sweet &amp; spicy whole chicken</span><i></i><b>₱150</b></li><li><span class="n">Split whole chicken</span><i></i><b>₱150</b></li><li><span class="n">Whole butterfly breaded chicken</span><i></i><b>₱150</b></li><li><span class="n">Tinapang manok</span><i></i><b>₱150</b></li><li><span class="n">Daing na manok</span><i></i><b>₱150</b></li><li><span class="n">Angry chicken</span><i></i><b>₱150</b></li><li><span class="n">Whole chicken cordon bleu <small>stuffed with ham &amp; cheese</small></span><i></i><b>₱150</b></li></ul></section>
+<section id="s11"><h2>Beef</h2><ul><li><span class="n">Jabee garlic pepper</span><i></i><b>₱150</b></li><li><span class="n">Beef tapa</span><i></i><b>₱150</b></li><li><span class="n">Lechon baka</span><i></i><b>₱150</b></li></ul></section>
+<section id="s12"><h2>Pork Samgyupsal</h2><p class="note">400–500g</p><ul><li><span class="n">Plain</span><i></i><b>₱115</b></li><li><span class="n">Spicy</span><i></i><b>₱115</b></li><li><span class="n">Bulgogi</span><i></i><b>₱115</b></li><li><span class="n">Honey BBQ</span><i></i><b>₱115</b></li><li><span class="n">Soy garlic</span><i></i><b>₱115</b></li><li><span class="n">Salt &amp; pepper</span><i></i><b>₱115</b></li><li><span class="n">Curry</span><i></i><b>₱115</b></li><li><span class="n">Herbs</span><i></i><b>₱115</b></li><li><span class="n">Signature recipe</span><i></i><b>₱115</b></li><li><span class="n">Teriyaki</span><i></i><b>₱115</b></li><li><span class="n">Nongbuga kimchi B1T1</span><i></i><b>₱105</b></li></ul></section>
+<section id="s13"><h2>Pork Tapa</h2><p class="note">400–500g</p><ul><li><span class="n">Tapa Calumpit pork</span><i></i><b>₱125</b></li><li><span class="n">Tapa Calumpit spicy</span><i></i><b>₱125</b></li><li><span class="n">Tapa Calumpit garlic</span><i></i><b>₱125</b></li><li><span class="n">Glazed pork tapa</span><i></i><b>₱125</b></li><li><span class="n">Hamonado pork tapa</span><i></i><b>₱125</b></li><li><span class="n">Smoked tapa</span><i></i><b>₱125</b></li></ul></section>
+<section id="s14"><h2>BBQ Sticks</h2><p class="note">400–500g</p><ul><li><span class="n">Pork BBQ stick, original</span><i></i><b>₱130</b></li><li><span class="n">Pork BBQ stick, spicy</span><i></i><b>₱130</b></li><li><span class="n">Honey teriyaki</span><i></i><b>₱130</b></li><li><span class="n">Peri peri</span><i></i><b>₱130</b></li><li><span class="n">Pork tocino</span><i></i><b>₱130</b></li></ul></section>
+<section id="s15"><h2>Pork & Liempo</h2><p class="note">400–450g</p><ul><li><span class="n">Pork teriyaki</span><i></i><b>₱130</b></li><li><span class="n">Pork steak</span><i></i><b>₱130</b></li><li><span class="n">Special pork tocino (400–500g)</span><i></i><b>₱130</b></li><li><span class="n">Very spicy liempo barbecue</span><i></i><b>₱130</b></li><li><span class="n">Garlic pepper liempo</span><i></i><b>₱130</b></li><li><span class="n">Sweet brown sugar liempo</span><i></i><b>₱130</b></li><li><span class="n">Liempo inasal</span><i></i><b>₱130</b></li></ul></section>
+<section id="s16"><h2>Mini Bagnet Series</h2><p class="note">400–500g</p><ul><li><span class="n">Mini bagnet inasal</span><i></i><b>₱125</b></li><li><span class="n">Mini pork BBQ</span><i></i><b>₱125</b></li><li><span class="n">Mini pupor kawali</span><i></i><b>₱125</b></li><li><span class="n">Mini pupor kawali bites, spicy</span><i></i><b>₱125</b></li><li><span class="n">Mini marinated bagnet</span><i></i><b>₱125</b></li><li><span class="n">Mini marinated bagnet, spicy</span><i></i><b>₱125</b></li><li><span class="n">Mini breaded bagnet</span><i></i><b>₱125</b></li></ul></section>
+<section id="s17"><h2>Bagnet — Regular Size</h2><p class="note">700–800g</p><ul><li><span class="n">Bagnet inasal</span><i></i><b>₱190</b></li><li><span class="n">Pork BBQ (liempo cut)</span><i></i><b>₱190</b></li><li><span class="n">Marinated bagnet</span><i></i><b>₱190</b></li><li><span class="n">Marinated bagnet, spicy</span><i></i><b>₱190</b></li><li><span class="n">Kawali bites</span><i></i><b>₱190</b></li><li><span class="n">Kawali bites, spicy</span><i></i><b>₱190</b></li><li><span class="n">Breaded bagnet (750–800g)</span><i></i><b>₱195</b></li><li><span class="n">Whole bagnet (850–950g)</span><i></i><b>₱200</b></li></ul></section>
+<section id="s18"><h2>Pork Ribs & Chops</h2><ul><li><span class="n">BBQ ribs ala racks</span><i></i><b>₱110</b></li><li><span class="n">Spicy spareribs</span><i></i><b>₱80</b></li><li><span class="n">Spareribs with black beans</span><i></i><b>₱80</b></li><li><span class="n">Smoked pork loin chops (mini, 300–400g)</span><i></i><b>₱120</b></li><li><span class="n">Marinated porkchop (mini, 300–400g)</span><i></i><b>₱120</b></li></ul></section>
+<section id="s19"><h2>Cold Cuts</h2><ul><li><span class="n">Porkchop, 400–500g</span><i></i><b>₱130</b></li><li><span class="n">Porkchop, 800–900g</span><i></i><b>₱220</b></li></ul></section>
+<section id="s20"><h2>Fish</h2><ul><li><span class="n">Daing bangus</span><i></i><b>₱110</b></li><li><span class="n">Daing bangus, spicy</span><i></i><b>₱115</b></li><li><span class="n">Ginamos</span><i></i><b>₱70</b></li></ul></section>
+<!--PRERENDER:END--></main>
+<p id="empty" hidden>Nothing matches that. Try “chicken” or “bagnet”, or <a href="https://m.me/NicolesFrostandFlour" target="_blank" rel="noopener">ask us on Messenger</a>.</p>
+<div id="reviews" hidden><h2>What our customers say</h2><div class="rv"></div></div>
+<div id="photos"><h2>Product photos</h2><div class="grid cut" id="g"></div><button type="button" class="morebtn" id="more">Show all 46 photos</button></div>
+</div></div>
+<div id="cart" hidden><div id="items"></div></div>
+<div id="bar" hidden><button id="view" type="button"></button><button id="send" type="button">Send order via Messenger</button></div>
+<div id="co" hidden role="dialog" aria-modal="true" aria-labelledby="cotitle"><div class="cobox">
+<button type="button" class="coclose" id="coclose" aria-label="Close">×</button>
+<form id="coform">
+<h2 id="cotitle">Checkout</h2>
+<ul id="cosum"></ul>
+<div id="cofl"></div>
+<label class="f"><span>Full name</span><input id="cn" name="name" required autocomplete="name"></label>
+<fieldset><legend>Fulfillment method</legend>
+<label class="rd"><input type="radio" name="fulfillment" value="Delivery" checked> Delivery</label>
+<label class="rd"><input type="radio" name="fulfillment" value="Pick-up"> Pick-up</label>
+<label class="rd"><input type="radio" name="fulfillment" value="Meet Halfway"> Meet Halfway</label>
+<p class="help" id="fhelp"></p></fieldset>
+<label class="f" id="cawrap"><span id="calabel">Delivery address</span><textarea id="ca" name="address" rows="3" autocomplete="street-address"></textarea></label>
+<div class="two">
+<label class="f"><span>Preferred weekend date</span><input type="date" id="cd" required></label>
+<label class="f"><span>Preferred time</span><select id="ct" required><option>Morning</option><option>Afternoon</option><option>Evening</option><option>Any time</option></select></label>
+</div>
+<label class="f"><span>Payment method</span><select id="cp" required><option value="" disabled selected>Choose…</option><option>GCash</option><option>Maya (PayMaya)</option><option>Bank Transfer</option><option>Cash on Delivery (COD)</option></select>
+<p class="help">Payment details are sent in chat once we confirm your order.</p></label>
+<button class="cosubmit" type="submit">Send order via Messenger</button>
+</form>
+<div id="codone" hidden>
+<h2>Almost done! 🎉</h2>
+<p class="help" id="cocopy"></p>
+<textarea id="cotext" readonly rows="10"></textarea>
+<a id="coopen" class="cosubmit" href="#" target="_blank" rel="noopener">Open Messenger</a>
+<div class="row2"><button type="button" id="cocopybtn" class="alt">Copy order</button><button type="button" id="coback" class="alt">Back to menu</button></div>
+</div></div></div>
+<div id="toast" role="status" hidden></div>
+<a class="order" href="https://m.me/NicolesFrostandFlour" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.15 2 11.27c0 2.9 1.45 5.48 3.72 7.17V22l3.4-1.87c.9.25 1.86.39 2.88.39 5.52 0 10-4.15 10-9.27S17.52 2 12 2zm1.03 12.49-2.55-2.72-4.97 2.72 5.47-5.8 2.61 2.72 4.91-2.72-5.47 5.8z"/></svg>Order on Messenger</a>
+<footer class="sf"><div class="sfi">
+<div class="sfa"><img class="flogo" src="img/logo.webp" alt="Nicole's Frost &amp; Flour" width="200" height="169" loading="lazy"><p class="big">Ulam na agad.<span>Marinated, frozen, ready-to-cook since 2020.</span></p><div class="btns"><a class="btn fb" href="https://m.me/NicolesFrostandFlour" target="_blank" rel="noopener">Order on Messenger</a><a class="btn ghost" href="https://www.facebook.com/NicolesFrostandFlour" target="_blank" rel="noopener">Facebook page</a></div></div>
+<div><h3>Shop</h3><ul id="fShop"></ul></div>
+<div><h3>Ordering</h3><ul id="fInfo"></ul></div>
+<div><h3>Pay with</h3><div class="pay" id="fPay"></div><h3 style="margin-top:22px">Based in</h3><p style="margin:0">Quezon City, Metro Manila</p></div>
+</div><div class="sfb"><span>© <span id="yr"></span> Nicole's Frost &amp; Flour. Prices in Philippine pesos (₱). Weights are approximate.</span><a href="#top">Back to top ↑</a></div></footer>
+<script src="config.js"></script>
+<script src="menu-default.js"></script>
+<script>(async()=>{
+let remote=null;try{const ac=new AbortController();setTimeout(()=>ac.abort(),3000);const rs=await fetch(SB.url+'/rest/v1/site_data?id=eq.main&select=data',{headers:{apikey:SB.key},signal:ac.signal});if(rs.ok){const rows=await rs.json();remote=(rows[0]&&rows[0].data)||null}}catch(e){}
+let D=MENU0.D,G=MENU0.G;if(remote){if(remote.D)D=remote.D;if(remote.G)G=remote.G}
+const SITE={...MENU0.SITE,...((remote&&remote.site)||{})},FL=(remote&&remote.flavors&&remote.flavors.length)?remote.flavors:MENU0.FL;
+const sold=(remote&&remote.sold)||{},tx=v=>String(v||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const fmt=v=>tx(v).replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>').replace(/\n/g,'<br>');
+document.getElementById('info').innerHTML=SITE.info.map(x=>'<div class="ic"><b>'+tx(x.t)+'</b><p>'+fmt(x.h)+'</p></div>').join('');
+document.querySelector('.hchips').innerHTML=SITE.perks.filter(x=>!(SITE.bannerOn&&SITE.banner&&/^\W*new\b/i.test(x))).map(x=>'<li>'+tx(x)+'</li>').join('');
+if(SITE.updatedAt)document.querySelector('.upd').textContent='Price list · Updated '+new Date(SITE.updatedAt).toLocaleDateString('en-PH',{month:'short',day:'numeric',year:'numeric'});
+if(SITE.bannerOn&&SITE.banner){const bn=document.getElementById('banner');bn.textContent=SITE.banner;bn.hidden=false}
+const m=document.getElementById('m'),c=document.getElementById('chips'),isD=t=>/^desserts\b/i.test(String(t).replace(' ★ Bestseller','').trim());let firstD=-1,dchip=null;
+m.innerHTML='';
+D.forEach(([t0,n,items,st],i)=>{const t=t0.replace(' ★ Bestseller',''),star=!!st||t!==t0;
+ const s=document.createElement('section');s.id='s'+i;if(star)s.classList.add('star');
+ s.innerHTML='<h2>'+t+(star?' <span class="bs">★ Bestseller</span>':'')+'</h2>'+(n?'<p class="note">'+n+'</p>':'')+'<ul>'+items.map(x=>{
+  const sub=typeof x[1]==='string';const p=sub?x[2]:x[1];
+  const fl=!sub&&x[2],cl=[sold[x[0]]?'sold':'',fl?'hasfl':''].filter(Boolean).join(' ');
+  return '<li'+(cl?' class="'+cl+'"':'')+'><span class="n">'+x[0]+(sub?' <small>'+x[1]+'</small>':'')+(fl?'<small class="fl">Choose from: '+FL.map(tx).join(', ')+'</small>':'')+'</span><i></i><b>'+(sold[x[0]]?'Sold out':'₱'+p)+'</b></li>'}).join('')+'</ul>';
+ m.appendChild(s);
+ if(isD(t)){if(firstD<0){firstD=i;dchip=document.createElement('a');dchip.href='#s'+i;dchip.textContent='🍰 Desserts';c.appendChild(dchip)}}
+ else{const a=document.createElement('a');a.href='#s'+i;a.textContent=t;c.appendChild(a)}
+});
+document.getElementById('q').addEventListener('input',e=>{
+ const v=e.target.value.toLowerCase().trim();
+ let hits=0;document.querySelectorAll('main section').forEach(s=>{
+  let any=false;
+  s.querySelectorAll('li').forEach(l=>{const ok=!v||l.textContent.toLowerCase().includes(v)||s.querySelector('h2').textContent.toLowerCase().includes(v);l.classList.toggle('hide',!ok);if(ok)any=true});
+  s.classList.toggle('hide',!any);if(any)hits++;
+ });
+ const pv=[...document.querySelectorAll('.pc')].some(c=>c.textContent.toLowerCase().includes(v));
+ document.getElementById('empty').hidden=!v||hits>0||pv;
+});
+
+const g=document.getElementById('g'),lb=document.getElementById('lb'),gd=document.getElementById('gd'),DN=new Set(D.filter(s=>isD(s[0])).flatMap(s=>s[2].map(x=>String(x[0]).toLowerCase())));
+G.forEach(([n,s,p,src])=>{const d=document.createElement('div');d.className='pc'+(sold[n]?' sold':'');
+ d.innerHTML='<button aria-label="View '+n+'"><img loading="lazy" decoding="async" alt="'+n+(s?' — '+s:'')+(p&&p[0]==='₱'?', '+p:'')+' (frozen, ready-to-cook)" src="'+(src.startsWith('http')?src:src.replace('img/','img/t-'))+'" width="360" height="360"></button><div>'+n+(s?'<small>'+s+'</small>':'')+'<b>'+(sold[n]?'Sold out':p)+'</b></div>';
+ d.querySelector('button').onclick=()=>{lb.querySelector('img').src=src;lb.querySelector('img').alt=n;lb.querySelector('span').innerHTML=n+' — '+p;lb.classList.add('on');lb.querySelector('.x').focus()};(DN.has(String(n).toLowerCase())?gd:g).appendChild(d)});
+if(gd.children.length){const ps=D.filter(s=>isD(s[0])).flatMap(s=>s[2].map(x=>Number(typeof x[1]==='string'?x[2]:x[1]))).filter(n=>n>0);document.getElementById('dphotos').hidden=false;document.getElementById('dsub').textContent=(ps.length?'From ₱'+Math.min(...ps)+' · ':'')+'tap a photo to enlarge';if(firstD>=0)document.getElementById('dlink').href='#s'+firstD;else document.getElementById('dlink').hidden=true;if(dchip)dchip.href='#dphotos'}
+lb.onclick=e=>{if(e.target.tagName!=='A')lb.classList.remove('on')};
+document.addEventListener('keydown',e=>{if(e.key==='Escape')lb.classList.remove('on')});
+document.getElementById('q').addEventListener('input',e=>{const v=e.target.value.toLowerCase().trim();
+ document.getElementById('g').classList.toggle('cut',!v&&!window.__all);document.getElementById('more').hidden=!!v||!!window.__all;
+ document.querySelectorAll('.pc').forEach(c=>c.classList.toggle('hide',!!v&&!c.textContent.toLowerCase().includes(v)));
+ document.getElementById('photos').classList.toggle('hide',!!v&&![...g.querySelectorAll('.pc')].some(c=>!c.classList.contains('hide')));
+ document.getElementById('dphotos').classList.toggle('hide',!!v&&![...gd.querySelectorAll('.pc')].some(c=>!c.classList.contains('hide')))});
+if(g.children.length<=12){window.__all=1;g.classList.remove('cut');document.getElementById('more').hidden=true}else document.getElementById('more').textContent='Show all '+g.children.length+' photos';
+let RR=(remote&&remote.reviews)||[];if(!RR.length)RR=[{text:'Super sarap! May kick ang spicy, hindi tinipid sa laman.',name:'Happy customer',product:'Spicy shanghai'}];const R=RR.filter(x=>x.show!==false&&(x.text||x.img));
+if(R.length){const rv=document.getElementById('reviews');rv.hidden=false;rv.querySelector('.rv').innerHTML=R.map(x=>'<figure class="rc">'+(x.stars?'<div class="stars" role="img" aria-label="'+x.stars+' out of 5 stars">'+'★'.repeat(x.stars)+'☆'.repeat(5-x.stars)+'</div>':'')+(x.img?'<img class="rimg" loading="lazy" alt="Message from a customer" src="'+tx(x.img)+'">':'')+(x.text?'<blockquote>'+tx(x.text)+'</blockquote>':'')+'<figcaption><b>'+tx(x.name||'Happy customer')+'</b>'+(x.product?' · '+tx(x.product):'')+'</figcaption></figure>').join('')}
+const pa=document.createElement('a');pa.href='#photos';pa.textContent='Photos';document.getElementById('chips').append(pa);
+document.getElementById('more').onclick=()=>{window.__all=1;document.getElementById('g').classList.remove('cut');document.getElementById('more').hidden=true};
+
+(()=>{
+const MSG='https://m.me/NicolesFrostandFlour',cart={},$=s=>document.querySelector(s),peso=n=>'₱'+n.toLocaleString('en-PH');
+function mk(name,price,label,cls){const b=document.createElement('button');b.type='button';b.className=cls;b.dataset.add=encodeURIComponent(name+'|'+price);b.dataset.label=label;b.dataset.n=name;b.dataset.p=price;b.textContent=label;b.setAttribute('aria-label','Add '+name+' to order');return b}
+document.querySelectorAll('.pc').forEach(c=>{
+ if(c.classList.contains('sold'))return;
+ const box=c.querySelector('div'),ptxt=c.querySelector('b').textContent,nums=[...ptxt.matchAll(/₱(\d+)/g)].map(m=>+m[1]),par=ptxt.match(/\(.*\)/);
+ const name=box.firstChild.textContent.trim(),w=document.createElement('span');w.className='acts';
+ if(nums.length===1&&!/–/.test(ptxt))w.append(mk(name+(par?' '+par[0]:''),nums[0],'Add to order','add'));
+ else if(nums.length===2&&/mini/.test(ptxt)&&/regular/.test(ptxt))w.append(mk(name+' (mini)',nums[0],'Mini ₱'+nums[0],'add'),mk(name+' (regular)',nums[1],'Regular ₱'+nums[1],'add'));
+ else{const a=document.createElement('a');a.className='add ask';a.href=MSG;a.target='_blank';a.rel='noopener';a.textContent='Ask on Messenger';w.append(a)}
+ box.append(w)});
+document.querySelectorAll('main li').forEach(li=>{
+ const b=li.querySelector('b'),m=b&&b.textContent.match(/^₱(\d+)$/);if(!m)return;
+ const n=li.querySelector('.n'),sm=n.querySelector('small:not(.fl)');
+ const pb=mk(n.firstChild.textContent.trim()+(sm?' ('+sm.textContent+')':''),+m[1],'+','plus');if(li.classList.contains('hasfl'))pb.dataset.fl='1';li.append(pb)});
+const tot=()=>{const a=Object.entries(cart);return{a,n:a.reduce((s,[,i])=>s+i.qty,0),t:a.reduce((s,[,i])=>s+i.qty*i.price,0)}};
+function render(){
+ const{a,n,t}=tot();
+ $('#bar').hidden=!n;if(!n)$('#cart').hidden=true;
+ const cb=document.getElementById('cartN');if(cb){cb.textContent=n;cb.hidden=!n}try{localStorage.setItem('ff-cart',JSON.stringify(cart))}catch(e){}
+ document.body.classList.toggle('has-cart',!!n);
+ $('#view').textContent='Your order · '+n+' item'+(n>1?'s':'')+' · '+peso(t)+' ▴';
+ $('#items').innerHTML=a.map(([k,i])=>'<div class="ci"><span>'+i.name+'<small>'+peso(i.price)+' each</small></span><span class="q"><button type="button" data-k="'+encodeURIComponent(k)+'" data-d="-1" aria-label="Less">−</button>'+i.qty+'<button type="button" data-k="'+encodeURIComponent(k)+'" data-d="1" aria-label="More">+</button></span></div>').join('');
+ document.querySelectorAll('[data-add]').forEach(b=>{const q=(cart[decodeURIComponent(b.dataset.add)]||{}).qty;b.classList.toggle('on',!!q);b.textContent=q?'✓ '+q:b.dataset.label});
+}
+function toast(msg){const t=$('#toast');t.textContent=msg;t.hidden=false;clearTimeout(toast.id);toast.id=setTimeout(()=>t.hidden=true,4500)}
+document.addEventListener('click',e=>{
+ const a=e.target.closest('[data-add]');
+ if(a){const k=decodeURIComponent(a.dataset.add);(cart[k]=cart[k]||{name:a.dataset.n,price:+a.dataset.p,qty:0,fl:!!a.dataset.fl}).qty++;render();return}
+ const q=e.target.closest('button[data-k]');
+ if(q&&cart[decodeURIComponent(q.dataset.k)]){const k=decodeURIComponent(q.dataset.k);cart[k].qty+=+q.dataset.d;if(cart[k].qty<=0)delete cart[k];render()}
+});
+try{const sv=JSON.parse(localStorage.getItem('ff-cart')||'{}'),ok=new Set([...document.querySelectorAll('[data-add]')].map(b=>decodeURIComponent(b.dataset.add)));for(const k in sv)if(ok.has(k)&&sv[k]&&sv[k].qty>0)cart[k]=sv[k]}catch(e){}render();
+$('#view').onclick=()=>{$('#cart').hidden=!$('#cart').hidden};
+const modal=$('#co'),form=$('#coform'),done=$('#codone'),esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+let lastFocus=null,sentText='';
+const ful=()=>form.elements.fulfillment.value;
+const wk=v=>{if(!v)return false;const d=new Date(v+'T00:00:00').getDay();return d===0||d===6};
+function syncFul(){const f=ful();$('#cawrap').hidden=f==='Pick-up';$('#ca').required=f!=='Pick-up';$('#calabel').textContent=f==='Meet Halfway'?'Meet-up location (area / landmark)':'Delivery address';$('#fhelp').textContent={'Delivery':'Free delivery within Quezon City.','Meet Halfway':"We'll agree on a meeting point in chat.",'Pick-up':"We'll send pick-up details in chat."}[f]}
+function openCo(){
+ const{a,t}=tot();if(!a.length)return;
+ lastFocus=document.activeElement;
+ $('#cosum').innerHTML=a.map(([,i])=>'<li><span>'+i.qty+' × '+esc(i.name)+'</span><b>'+peso(i.qty*i.price)+'</b></li>').join('')+'<li class="tt"><span>Total</span><b>'+peso(t)+'</b></li>';
+ const fl=a.filter(([,i])=>i.fl).map(([k,i])=>Array.from({length:i.qty},(_,u)=>'<label class="f"><span>Flavor: '+esc(i.name)+(i.qty>1?' · set '+(u+1):'')+'</span><select required data-fk="'+esc(k)+'"><option value="" disabled selected>Choose flavor…</option>'+FL.map(f=>'<option>'+f+'</option>').join('')+'</select></label>').join('')).join('');
+ $('#cofl').innerHTML=fl+(fl?'<p class="help" style="margin:-6px 0 12px">Want a different flavor for each pack? Tell us in the Messenger chat.</p>':'');
+ const d=new Date();d.setDate(d.getDate()+1);const p=n=>String(n).padStart(2,'0');
+ $('#cd').min=d.getFullYear()+'-'+p(d.getMonth()+1)+'-'+p(d.getDate());
+ form.hidden=false;done.hidden=true;modal.hidden=false;document.body.classList.add('noscroll');$('.cobox').scrollTop=0;
+ syncFul();$('#cn').focus();
+}
+function closeCo(){modal.hidden=true;document.body.classList.remove('noscroll');if(lastFocus)lastFocus.focus()}
+async function copyText(){try{await navigator.clipboard.writeText(sentText);return true}catch(e){const ta=$('#cotext');ta.focus();ta.select();try{return document.execCommand('copy')}catch(e2){return false}}}
+$('#send').onclick=openCo;
+$('#coclose').onclick=closeCo;$('#coback').onclick=closeCo;
+modal.addEventListener('click',e=>{if(e.target===modal)closeCo()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!modal.hidden)closeCo()});
+form.addEventListener('change',e=>{if(e.target.name==='fulfillment')syncFul()});
+$('#cd').addEventListener('input',e=>e.target.setCustomValidity(wk(e.target.value)?'':'Please choose a Saturday or Sunday.'));
+$('#cocopybtn').onclick=async()=>{$('#cocopy').textContent=(await copyText())?'✅ Copied! Paste it in the Messenger chat.':'Press and hold the text box, then tap Copy.'};
+form.addEventListener('submit',e=>{
+ e.preventDefault();
+ const cd=$('#cd');cd.setCustomValidity(wk(cd.value)?'':'Please choose a Saturday or Sunday.');
+ if(!form.reportValidity())return;
+ const{a,t}=tot();if(!a.length){closeCo();return}
+ const f=ful(),when=new Date(cd.value+'T00:00:00').toLocaleDateString('en-PH',{weekday:'long',year:'numeric',month:'long',day:'numeric'})+' · '+$('#ct').value;
+ const fv={};document.querySelectorAll('#cofl select').forEach(x=>(fv[x.dataset.fk]=fv[x.dataset.fk]||[]).push(x.value));
+ const lines=a.map(([k,i],n)=>(n+1)+'. '+i.name+' — '+i.qty+' × '+peso(i.price)+' = '+peso(i.qty*i.price)+(fv[k]?'\n    Flavor'+(fv[k].length>1?'s':'')+': '+fv[k].join(', '):''));
+ const text=["🛒 NEW ORDER — Nicole's Frost & Flour",'','ITEMS',...lines,'','TOTAL: '+peso(t),'','CUSTOMER DETAILS','Name: '+$('#cn').value.trim(),'Fulfillment: '+f,...(f==='Pick-up'?[]:[(f==='Meet Halfway'?'Meet-up location: ':'Delivery address: ')+$('#ca').value.trim()]),'Preferred schedule: '+when,'Payment: '+$('#cp').value,'','Thank you!'].join('\n');
+
+ try{fetch(SB.url+'/rest/v1/orders',{method:'POST',keepalive:true,headers:{apikey:SB.key,'Content-Type':'application/json',Prefer:'return=minimal'},body:JSON.stringify({customer:$('#cn').value.trim(),fulfillment:f,address:f==='Pick-up'?null:$('#ca').value.trim(),schedule:when,payment:$('#cp').value,total:t,items:a.map(([k,i])=>({name:i.name,qty:i.qty,price:i.price,flavors:fv[k]||[]}))})}).catch(()=>{})}catch(e){}
+ sentText=text;$('#cotext').value=text;
+ const url=MSG+'?text='+encodeURIComponent(text);
+ $('#coopen').href=url;
+ form.hidden=true;done.hidden=false;$('.cobox').scrollTop=0;
+ $('#cocopy').textContent='Opening Messenger…';
+ window.open(url,'_blank','noopener');
+ for(const k in cart)delete cart[k];render();form.reset();syncFul();
+ copyText().then(ok=>{$('#cocopy').textContent=ok?'✅ Order copied and your cart is cleared. If the Messenger message box is empty, just paste it and send.':'If the Messenger message box is empty, tap "Copy order" below and paste it.'});
+});
+})();
+})();
+</script>
+<script>(()=>{
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)],MSG='https://m.me/NicolesFrostandFlour',tx=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const sh=$('#sh'),scrim=$('#scrim'),P={mega:['#bMega','#pMega','#wMega'],ord:['#bOrd','#pOrd','#wOrd'],srch:['#bSrch','#pSrch']};let cur=null,ht,hv=0,ftPc=null;
+function shut(f){if(!cur)return;const[b,p]=P[cur].map($);p.classList.remove('on');b.setAttribute('aria-expanded','false');scrim.classList.remove('on');if(f)b.focus();cur=null}
+function show(k){if(cur===k)return;shut();const[b,p]=P[k].map($);p.classList.add('on');b.setAttribute('aria-expanded','true');scrim.classList.add('on');cur=k;if(k==='srch')setTimeout(()=>$('#q').focus(),40)}
+for(const k in P){const[b,p,w]=P[k];$(b).onclick=()=>{if(cur===k&&Date.now()-hv>500)shut(true);else show(k)};
+ if(w){const el=$(w);el.addEventListener('mouseenter',()=>{if(matchMedia('(hover:hover) and (min-width:980px)').matches){clearTimeout(ht);hv=Date.now();show(k)}});el.addEventListener('mouseleave',()=>{if(matchMedia('(hover:hover)').matches){ht=setTimeout(()=>cur===k&&shut(),180)}})}
+ $(p).addEventListener('click',e=>{if(e.target.closest('a'))shut()})}
+scrim.onclick=()=>shut();
+document.addEventListener('click',e=>{if(cur&&!e.target.closest('#sh'))shut()});
+sh.addEventListener('focusout',e=>{if(cur&&e.relatedTarget&&!sh.contains(e.relatedTarget))shut()});
+addEventListener('scroll',()=>sh.classList.toggle('sc',scrollY>8),{passive:true});
+const dr=$('#dr'),openDr=()=>{dr.hidden=false;document.body.classList.add('noscroll');$('#bClose').focus()},closeDr=()=>{dr.hidden=true;document.body.classList.remove('noscroll');$('#bBurger').focus()};
+$('#bBurger').onclick=openDr;$('#bClose').onclick=closeDr;dr.querySelector('.drs').onclick=closeDr;
+dr.addEventListener('click',e=>{if(e.target.closest('a')){dr.hidden=true;document.body.classList.remove('noscroll')}});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){if(!dr.hidden)closeDr();else shut(true)}
+ if(e.key==='/'&&!/INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName)&&$('#co').hidden){e.preventDefault();show('srch')}});
+const q=$('#q'),go=()=>{shut();$('#m').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth'})};
+q.addEventListener('keydown',e=>{if(e.key==='Enter')go()});
+$$('.sq button').forEach(b=>b.onclick=()=>{q.value=b.textContent;q.dispatchEvent(new Event('input',{bubbles:true}));go()});
+const th=$('#bTheme'),root=document.documentElement,dark=()=>root.dataset.theme?root.dataset.theme==='dark':matchMedia('(prefers-color-scheme:dark)').matches;
+try{const s=localStorage.getItem('ff-theme');if(s)root.dataset.theme=s}catch(e){}
+th.onclick=()=>{const n=dark()?'light':'dark';root.dataset.theme=n;try{localStorage.setItem('ff-theme',n)}catch(e){}};
+function build(){
+ const cats=$$('main section').map(s=>{const h=s.querySelector('h2');if(!h)return null;const pr=[...s.querySelectorAll('li b')].map(b=>+((b.textContent.match(/^₱(\d+)/)||[])[1])).filter(Boolean);return{id:s.id,name:h.childNodes[0].textContent.trim(),star:s.classList.contains('star'),min:pr.length?Math.min(...pr):0}}).filter(Boolean);
+ const G=[['Pork & grill',[]],['Chicken, beef & fish',[]],['Homemade favorites',[]],['Desserts',[]]];
+ cats.forEach(c=>G[/^desserts\b/i.test(c.name)?3:/chicken|beef|fish/i.test(c.name)?1:/shanghai|homemade|chicharon|\bham|combo|roll/i.test(c.name)?2:0][1].push(c));
+ const lk=(c,d)=>'<a class="ml" href="#'+c.id+'"><span>'+tx(d?c.name.replace(/^desserts\s*·\s*/i,''):c.name)+(c.star?' <span class="st">★</span>':'')+'</span>'+(c.min?'<small>from ₱'+c.min+'</small>':'')+'</a>';
+ const grp=i=>G[i][1].length?'<h3>'+G[i][0]+'</h3>'+G[i][1].map(c=>lk(c,i===3)).join(''):'';
+ ftPc=$$('.pc').find(p=>/bestseller/i.test(p.textContent))||$('.pc');
+ let ft='';if(ftPc){const im=ftPc.querySelector('img'),best=/bestseller/i.test(ftPc.textContent);ft='<div class="ft"><img src="'+tx(im.src)+'" alt="" width="360" height="360" loading="lazy">'+(best?'<span class="bs">★ Bestseller</span>':'')+'<div class="ftb"><b>'+tx(ftPc.querySelector('div').firstChild.textContent)+'</b><span>'+tx(ftPc.querySelector('b').textContent)+'</span><button class="ftbtn" type="button">Add to order</button></div></div>'}
+ const perks=$$('.hchips li').slice(0,3).map(l=>'<span>'+tx(l.textContent)+'</span>').join('');
+ $('#pMega').innerHTML='<div class="mgi"><div>'+grp(0)+'</div><div>'+grp(1)+'</div><div>'+grp(2)+grp(3)+'</div>'+ft+'</div><div class="mgb"><div class="mgbi">'+perks+'<a href="#m">Browse the full price list</a></div></div>';
+ const ic=$$('#info .ic').map(c=>{const b=c.querySelector('b').textContent,m=b.match(/^(\S+)\s+(.*)$/);return{i:m?m[1]:'•',t:m?m[2]:b,d:c.querySelector('p').innerHTML}});
+ $('#pOrd').innerHTML=ic.map(x=>'<a class="r1" href="#info"><span class="ico" aria-hidden="true">'+x.i+'</span><span><b>'+tx(x.t)+'</b><em>'+x.d+'</em></span></a>').join('')+'<a class="ddf" href="'+MSG+'" target="_blank" rel="noopener">Questions? Message us<span aria-hidden="true">→</span></a>';
+ $$('main section').forEach(s=>s.classList.toggle('wide',s.querySelectorAll('li').length>=10));
+ const dp=$('#dphotos'),d0=G[3][1][0],dh=dp&&!dp.hidden?'#dphotos':(d0?'#'+d0.id:'');
+ $$('.ldes').forEach(a=>{a.hidden=!dh;if(dh)a.href=dh});
+ $('#drb').innerHTML=G.filter(g=>g[1].length).map((g,i)=>'<details'+(i===0?' open':'')+'><summary>'+g[0]+'</summary>'+g[1].map(c=>lk(c,g===G[3])).join('')+'</details>').join('')+'<a class="dl" href="#info">How to order</a><a class="dl" href="#photos">Photos</a>'+($('#reviews').hidden?'':'<a class="dl" href="#reviews">Reviews</a>');
+
+ {const sb=$('#sb'),gs=G.filter(g=>g[1].length);
+ sb.innerHTML='<h2>Price list</h2><div class="sbl">'+gs.map(g=>'<h3>'+g[0]+'</h3>'+g[1].map(c=>lk(c,g===G[3])).join('')).join('')+'<a class="ml" href="#photos"><span>Product photos</span></a></div><div class="sbc"><b>Ready to order?</b><p>Order on weekdays. We deliver on weekends.</p><a class="btn fb" href="'+MSG+'" target="_blank" rel="noopener">Order on Messenger</a></div>';
+ if(window.__spy)window.__spy.disconnect();
+ if('IntersectionObserver' in window){window.__spy=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;$$('#sb .ml.on').forEach(a=>{a.classList.remove('on');a.removeAttribute('aria-current')});const a=$('#sb .ml[href="#'+e.target.id+'"]');if(a){a.classList.add('on');a.setAttribute('aria-current','true');const l=$('#sb .sbl');if(l&&l.scrollWidth>l.clientWidth)l.scrollTo({left:a.offsetLeft-60,behavior:'smooth'})}}),{rootMargin:'-110px 0px -65% 0px'});$$('main section').forEach(s=>window.__spy.observe(s))}}
+ $('#fShop').innerHTML=G.filter(g=>g[1].length).map(g=>'<li><a href="#'+g[1][0].id+'">'+g[0]+'</a></li>').join('')+'<li><a href="#photos">Product photos</a></li>';
+ $('#fInfo').innerHTML=ic.filter(x=>!/pay/i.test(x.t)).map(x=>'<li><strong>'+tx(x.t)+'</strong><span class="ld">'+x.d+'</span></li>').join('');
+ const pay=ic.find(x=>/pay/i.test(x.t)),pl=pay?pay.d.split(/\s*·\s*/).filter(Boolean):['GCash','Maya','Bank transfer','Cash on delivery'];
+ $('#fPay').innerHTML=pl.map(x=>'<span>'+x+'</span>').join('');
+}
+$('#pMega').addEventListener('click',e=>{if(e.target.closest('.ftbtn')){shut();const a=ftPc&&ftPc.querySelector('.add[data-add]');if(a)a.click();else window.open(MSG,'_blank','noopener')}});
+let bt;const sched=()=>{clearTimeout(bt);bt=setTimeout(build,60)};
+['#m','#g','#gd','#info','.hchips','#dphotos','#reviews'].forEach(s=>{const el=$(s);if(el)new MutationObserver(()=>{sched();const r=$('#reviews');$$('.lrv').forEach(a=>a.hidden=r.hidden)}).observe(el,{childList:true,attributes:true,attributeFilter:['hidden']})});
+$('#yr').textContent=new Date().getFullYear();build();
+})();</script>
+<script>
+(()=>{const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const toast=m=>{const t=$('#toast');t.textContent=m;t.hidden=false;clearTimeout(toast.i);toast.i=setTimeout(()=>t.hidden=true,3500)};
+$('#bCart').onclick=()=>{if($('#bar').hidden)toast('Your order is empty. Tap + on any item to add it.');else $('#cart').hidden=!$('#cart').hidden};
+const dn=new Intl.DateTimeFormat('en-US',{weekday:'short',timeZone:'Asia/Manila'}).format(new Date()),co=$('#cutoff');
+co.textContent={Fri:'Last day to order for this weekend’s delivery.',Sat:'We’re delivering today. New orders go to next weekend.',Sun:'We’re delivering today. New orders go to next weekend.'}[dn]||'Order by Friday for this weekend’s delivery.';co.hidden=false;
+function rr(c,x,y,w,h,r){c.beginPath();c.moveTo(x+r,y);c.arcTo(x+w,y,x+w,y+h,r);c.arcTo(x+w,y+h,x,y+h,r);c.arcTo(x,y+h,x,y,r);c.arcTo(x,y,x+w,y,r);c.closePath()}
+async function listImg(){
+ toast('Preparing the price list…');await (document.fonts&&document.fonts.ready);
+ const S=$$('main section').map(s=>({t:s.querySelector('h2').childNodes[0].textContent.trim(),n:(s.querySelector('.note')||{}).textContent||'',r:[...s.querySelectorAll('li')].map(l=>{const n=l.querySelector('.n'),sm=n.querySelector('small:not(.fl)');return[n.firstChild.textContent.trim()+(sm?' ('+sm.textContent+')':''),l.querySelector('b').textContent]})}));
+ const W=1080,P=40,G=22,CW=(W-P*2-G)/2,RH=32,top=200,hg=s=>56+(s.n?24:0)+s.r.length*RH+18,cols=[[],[]],hs=[0,0];
+ S.forEach(s=>{const i=hs[0]<=hs[1]?0:1;cols[i].push(s);hs[i]+=hg(s)+G});
+ const H=top+Math.max(...hs)+90,cv=document.createElement('canvas');cv.width=W;cv.height=H;const c=cv.getContext('2d');
+ c.fillStyle='#eaf3f8';c.fillRect(0,0,W,H);c.fillStyle='#0a1a29';c.fillRect(0,0,W,top-30);
+ try{if(location.protocol==='file:')throw 0;const im=new Image();im.src='img/logo.webp';await im.decode();const lh=130,lw=lh*im.width/im.height;c.drawImage(im,P,24,lw,lh)}catch(e){}
+ c.fillStyle='#fff';c.font='800 50px "Bricolage Grotesque",Georgia,sans-serif';c.fillText('Price list',P+190,78);
+ c.fillStyle='#8fc3e6';c.font='500 22px Figtree,system-ui,sans-serif';c.fillText((($('.upd')||{}).textContent||'').replace(/^Price list · /,''),P+190,112);
+ c.fillStyle='#ff9fb4';c.fillText('Order on Messenger: m.me/NicolesFrostandFlour',P+190,146);
+ const fit=(t,m)=>{if(c.measureText(t).width<=m)return t;while(t.length>1&&c.measureText(t+'…').width>m)t=t.slice(0,-1);return t+'…'};
+ cols.forEach((col,ci)=>{let y=top;const x=P+ci*(CW+G);col.forEach(s=>{const h=hg(s);c.fillStyle='#fff';rr(c,x,y,CW,h,18);c.fill();c.strokeStyle='#b9d2e2';c.lineWidth=1.5;c.stroke();c.fillStyle='#c2415d';c.fillRect(x+20,y,44,5);
+  c.fillStyle='#12304a';c.font='800 24px "Bricolage Grotesque",Georgia,sans-serif';c.fillText(fit(s.t,CW-40),x+20,y+38);let yy=y+56;
+  if(s.n){c.fillStyle='#5d7488';c.font='400 15px Figtree,system-ui,sans-serif';c.fillText(fit(s.n,CW-40),x+20,yy+8);yy+=24}
+  s.r.forEach(([n,pr])=>{c.font='800 19px "Bricolage Grotesque",Georgia,sans-serif';const pw=c.measureText(pr).width;c.fillStyle='#c2415d';c.textAlign='right';c.fillText(pr,x+CW-20,yy+22);c.textAlign='left';
+   c.fillStyle='#12304a';c.font='500 17px Figtree,system-ui,sans-serif';c.fillText(fit(n,CW-60-pw),x+20,yy+22);yy+=RH});y+=h+G})});
+ c.fillStyle='#5d7488';c.font='400 16px Figtree,system-ui,sans-serif';c.textAlign='center';c.fillText('Prices in Philippine pesos (₱). Weights are approximate. Order weekdays, delivery on weekends.',W/2,H-34);
+ cv.toBlob(async b=>{const f=new File([b],'nicoles-frost-and-flour-price-list.png',{type:'image/png'});
+  if(navigator.canShare&&navigator.canShare({files:[f]})){try{await navigator.share({files:[f],title:"Nicole's Frost & Flour price list"});return}catch(e){if(e.name==='AbortError')return}}
+  const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download=f.name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),4000);toast('Price list saved as an image.')},'image/png')}
+document.addEventListener('click',e=>{const a=e.target.closest('.dlpl');if(a){e.preventDefault();listImg()}});
+const add=(sel,html)=>{const el=$(sel);if(el&&!el.querySelector('.dlpl'))el.insertAdjacentHTML('beforeend',html)};
+new MutationObserver(()=>{add('.sbc','<a class="dlpl" href="#">Share price list (image)</a>');add('#fShop','<li><a class="dlpl" href="#">Share price list (image)</a></li>');add('#drb','<a class="dl dlpl" href="#">Share price list</a>')}).observe(document.body,{childList:true,subtree:true});
+})();
+</script>
+<script>(()=>{const ev=n=>{try{window.va('event',{name:n})}catch(e){}};
+document.addEventListener('click',e=>{if(e.target.closest('a[href*="m.me/"]'))ev('messenger_click');if(e.target.closest('[data-add]'))ev('add_to_cart');if(e.target.closest('.dlpl'))ev('share_price_list')});
+document.addEventListener('submit',e=>{if(e.target.matches('form'))ev('order_sent')},true)})();</script>
+</body></html>
