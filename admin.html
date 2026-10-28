@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow">
+<title>Admin · Nicole's Frost & Flour</title>
+<style>
+:root{--bg:#f3f8fc;--card:#fff;--ink:#12304a;--mute:#5d7589;--berry:#c2415d;--line:#d6e3ee;color-scheme:light}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.4 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+[hidden]{display:none!important}button,input,select,textarea{font:inherit;color:inherit}
+input,select,textarea{border:1px solid var(--line);border-radius:8px;padding:9px 10px;background:#fff;min-width:0;width:100%}
+textarea{min-height:76px;resize:vertical}
+button,.btn{border:0;border-radius:999px;padding:9px 16px;background:var(--ink);color:#fff;font-weight:600;cursor:pointer;min-height:40px;display:inline-flex;align-items:center;justify-content:center;white-space:nowrap}
+button.sec,.btn.sec{background:#e4eef6;color:var(--ink)}button.del{background:transparent;color:var(--berry);padding:6px 10px}
+button:disabled{opacity:.45;cursor:default}:focus-visible{outline:3px solid var(--berry);outline-offset:2px}
+#login{max-width:340px;margin:14vh auto;padding:0 20px}#login h1{margin:0 0 14px}#login form{display:grid;gap:10px}
+.err{color:var(--berry);min-height:1.3em;margin:0}
+.top{position:sticky;top:0;z-index:5;background:var(--ink);color:#fff;display:flex;gap:8px;align-items:center;flex-wrap:wrap;padding:10px 14px}
+.top b{margin-right:4px}.top nav{display:flex;gap:6px;flex:1;overflow-x:auto;min-width:100%;order:5}.top nav button{background:rgba(255,255,255,.12)}.top nav button.on{background:#fff;color:var(--ink)}
+.top a{color:#bfe0f5}#save{background:var(--berry)}#st{font-size:.85rem;color:#bfe0f5;flex:1}
+.top .sec{background:rgba(255,255,255,.15);color:#fff}
+@media(min-width:900px){.top nav{min-width:0;order:0}}
+#ad{max-width:980px;margin:0 auto;padding:16px}
+.tools{display:flex;gap:10px;margin-bottom:12px;flex-wrap:wrap}
+.sec1{background:var(--card);border-radius:14px;padding:14px;margin-bottom:16px;box-shadow:0 4px 14px rgba(18,48,74,.07)}
+.sec1 h3{margin:0 0 8px;font-size:1.05rem}
+.sh{display:grid;grid-template-columns:1fr 1.2fr auto;gap:8px;margin-bottom:6px}.sh .t{font-weight:700}
+.bulk{display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-bottom:8px}.bulk button{min-height:34px;padding:5px 12px;font-size:.88rem}
+.row{display:grid;grid-template-columns:2fr 1.2fr 100px auto auto auto;gap:8px;align-items:center;padding:6px 0;border-top:1px solid var(--line)}
+.row.ph{grid-template-columns:52px 2fr 1.2fr 110px auto auto auto}.row.ph img,.thumb{width:52px;height:52px;object-fit:cover;border-radius:8px;background:#e4eef6}
+.so{display:flex;gap:6px;align-items:center;white-space:nowrap;font-size:.9rem}.so input{width:auto}.so input[type=number]{width:100%;min-width:0}.sec1,.row>*{min-width:0}
+.mv{display:flex;gap:2px;align-items:center}.mv button{padding:4px 9px;min-height:32px}
+.rev{display:grid;grid-template-columns:1fr 1fr 110px;gap:8px}.rev textarea,.rev .ft{grid-column:1/-1}
+.rev .ft{display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap}.rev img{max-width:140px;border-radius:8px;display:block}
+.hint{color:var(--mute);font-size:.9rem;margin:0 0 12px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-bottom:14px}.stat{background:var(--card);border-radius:12px;padding:12px;box-shadow:0 4px 14px rgba(18,48,74,.07)}.stat b{display:block;font-size:1.4rem}
+.ord{border-top:1px solid var(--line);padding:10px 0;display:grid;grid-template-columns:1fr auto;gap:6px 12px}.ord small{color:var(--mute)}.ord ul{margin:4px 0 0;padding-left:18px}
+dialog{border:0;border-radius:16px;padding:18px;max-width:440px;width:92vw}dialog::backdrop{background:rgba(10,26,41,.55)}
+.hv{display:flex;justify-content:space-between;gap:10px;align-items:center;border-top:1px solid var(--line);padding:8px 0}
+@media(max-width:700px){.sh{grid-template-columns:minmax(0,1fr)}.row,.row.ph{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.row>:first-child,.row.ph>:nth-child(2){grid-column:1/-1}.row.ph img{grid-row:span 1}.rev{grid-template-columns:1fr 1fr}.rev select{grid-column:1/-1}.mv{justify-content:flex-end}}
+</style></head><body>
+<div id="login"><h1>Admin</h1><form id="lf"><input id="em" type="email" autocomplete="username" aria-label="Admin email" placeholder="Admin email" required><input id="pw" type="password" autocomplete="current-password" aria-label="Password" placeholder="Password" required><button>Sign in</button><p class="err" id="le" role="alert"></p></form></div>
+<div id="app" hidden>
+<div class="top"><b>Frost &amp; Flour admin</b><span id="st" role="status"></span><button id="save" disabled>Save changes</button><button class="sec" id="hbtn">History</button><a href="/" target="_blank" rel="noopener">View site</a><button class="sec" id="out">Sign out</button>
+<nav><button data-tab="menu" class="on">Price list</button><button data-tab="photos">Photo cards</button><button data-tab="reviews">Testimonials</button><button data-tab="site">Site info</button><button data-tab="orders">Orders</button></nav></div>
+<main id="ad"></main></div>
+<dialog id="hist"><h3 style="margin:0 0 4px">Earlier versions</h3><p class="hint">Each time you save, the version it replaced is kept (last 30). Loading one puts it in the editor; it only goes live when you press Save changes.</p><div id="hl"></div><button class="sec" id="hx" style="margin-top:12px">Close</button></dialog>
+<script src="config.js"></script>
+<script src="menu-default.js"></script>
+<script>
+const $=s=>document.querySelector(s);
+const dec=s=>{const t=document.createElement('textarea');t.innerHTML=s;return t.value};
+const enc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+const ea=s=>String(s??'').replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;');
+let S,tab='menu',dirty=false,ses=JSON.parse(sessionStorage.getItem('ffses')||'null');
+const H=t=>({apikey:SB.key,'Content-Type':'application/json',...(t?{Authorization:'Bearer '+t}:{})});
+const keep=j=>{ses={access:j.access_token,refresh:j.refresh_token,exp:Date.now()+(j.expires_in-60)*1000};sessionStorage.setItem('ffses',JSON.stringify(ses))};
+async function auth(grant,body){const r=await fetch(SB.url+'/auth/v1/token?grant_type='+grant,{method:'POST',headers:H(),body:JSON.stringify(body)});const j=await r.json().catch(()=>({}));if(!r.ok)throw new Error(grant==='password'?'Wrong email or password.':'Session expired. Please sign in again.');keep(j)}
+async function token(){if(!ses)throw new Error('Please sign in again.');if(Date.now()>ses.exp){try{await auth('refresh_token',{refresh_token:ses.refresh})}catch(e){sessionStorage.removeItem('ffses');ses=null;throw e}}return ses.access}
+async function isAdmin(){const r=await fetch(SB.url+'/rest/v1/rpc/is_admin',{method:'POST',headers:H(await token()),body:'{}'});return r.ok&&(await r.json())===true}
+async function rest(path,opt={}){const r=await fetch(SB.url+'/rest/v1/'+path,{...opt,headers:{...H(await token()),...(opt.headers||{})}});if(r.status===401||r.status===403)throw new Error('This account is not an admin.');if(!r.ok){const j=await r.json().catch(()=>({}));throw new Error(j.message||'Request failed.')}return r.status===204?null:r.json().catch(()=>null)}
+async function upload(file){const bmp=await createImageBitmap(file),sc=Math.min(1,1000/Math.max(bmp.width,bmp.height)),c=document.createElement('canvas');c.width=Math.round(bmp.width*sc);c.height=Math.round(bmp.height*sc);c.getContext('2d').drawImage(bmp,0,0,c.width,c.height);
+ const blob=await new Promise(r=>c.toBlob(r,'image/webp',.82)),name=Date.now()+'-'+Math.random().toString(36).slice(2,8)+'.webp';
+ const r=await fetch(SB.url+'/storage/v1/object/photos/'+name,{method:'POST',headers:{apikey:SB.key,Authorization:'Bearer '+await token(),'Content-Type':'image/webp'},body:blob});if(!r.ok)throw new Error('Photo upload failed.');return SB.url+'/storage/v1/object/public/photos/'+name}
+const lines=t=>t.split('\n').map(x=>x.trim()).filter(Boolean);
+function load(rm){const sold=rm.sold||{},site=rm.site||{};
+ S={D:(rm.D||MENU0.D).map(([t0,n,items,st])=>{const t=dec(t0);return{t:t.replace(' ★ Bestseller',''),star:!!st||t.includes('★ Bestseller'),n:dec(n),items:items.map(x=>{const sub=typeof x[1]==='string';return{name:dec(x[0]),sub:sub?dec(x[1]):'',price:sub?x[2]:x[1],fl:!sub&&!!x[2],sold:!!sold[x[0]]}})}}),
+ G:(rm.G||MENU0.G).map(([n,s,p,src])=>({name:dec(n),sub:dec(s),price:dec(p),src,sold:!!sold[n]})),
+ R:(rm.reviews||[]).map(r=>({name:r.name||'',product:r.product||'',text:r.text||'',stars:r.stars||5,show:r.show!==false,img:r.img||''})),
+ site:{bannerOn:!!site.bannerOn,banner:site.banner||'',perks:(site.perks||MENU0.SITE.perks).join('\n'),info:(site.info||MENU0.SITE.info).map(c=>({t:c.t,h:c.h}))},
+ fl:(rm.flavors&&rm.flavors.length?rm.flavors:MENU0.FL).join('\n'),seeded:rm.seeded||[]}}
+function out(){const sold={};
+ const D=S.D.map(s=>[enc(s.t),enc(s.n),s.items.map(i=>{const nm=enc(i.name);if(i.sold)sold[nm]=1;const p=Number(i.price)||0;return i.sub?[nm,enc(i.sub),p]:i.fl?[nm,p,'1']:[nm,p]}),s.star?1:0]);
+ const G=S.G.map(g=>{const nm=enc(g.name);if(g.sold)sold[nm]=1;return[nm,enc(g.sub),enc(g.price),g.src]});
+ return{D,G,sold,seeded:[...new Set([...(S.seeded||[]),MENU0.DESSERTS.id])],reviews:S.R.filter(r=>r.text.trim()||r.img),flavors:lines(S.fl),site:{bannerOn:S.site.bannerOn&&!!S.site.banner.trim(),banner:S.site.banner.trim(),perks:lines(S.site.perks),info:S.site.info.filter(c=>c.t.trim()||c.h.trim()),updatedAt:new Date().toISOString()}}}
+const get=p=>p.split('.').reduce((o,k)=>o[k],S);
+const inp=(p,v,ph,type='text',x='')=>`<input data-p="${p}" type="${type}" value="${ea(v)}" placeholder="${ph}" aria-label="${ph}" ${x}>`;
+const chk=(p,v,l)=>`<label class="so"><input type="checkbox" data-p="${p}" ${v?'checked':''}> ${l}</label>`;
+const mv=(a,i,w='Delete')=>`<span class="mv"><button class="sec" data-a="up" data-arr="${a}" data-i="${i}" aria-label="Move up">↑</button><button class="sec" data-a="dn" data-arr="${a}" data-i="${i}" aria-label="Move down">↓</button><button class="del" data-a="del" data-arr="${a}" data-i="${i}">${w}</button></span>`;
+const upl=(u,l)=>`<label class="btn sec" style="min-height:34px;padding:5px 12px;font-size:.88rem">${l}<input type="file" accept="image/*" data-up="${u}" hidden></label>`;
+const fmtd=d=>new Date(d).toLocaleString('en-PH',{dateStyle:'medium',timeStyle:'short'});
+const peso=n=>'₱'+Number(n).toLocaleString('en-PH');
+function draw(){document.querySelectorAll('.top nav button').forEach(b=>b.classList.toggle('on',b.dataset.tab===tab));let h='';
+ if(tab==='menu'){h='<div class="tools"><input id="flt" type="search" placeholder="Filter items…" aria-label="Filter items" style="max-width:320px"></div><p class="hint">Change prices, tick “Sold out” to grey an item out, or add/remove items and sections. Nothing goes live until you press Save changes.</p>'+
+  S.D.map((s,si)=>`<section class="sec1"><div class="sh">${inp(`D.${si}.t`,s.t,'Section title','text','class="t"')}${inp(`D.${si}.n`,s.n,'Section note (optional)')}${mv('D',si)}</div>
+  <div class="bulk">${chk(`D.${si}.star`,s.star,'★ Bestseller')}<button class="sec" data-a="bulk" data-m="sold" data-s="${si}">Mark all sold out</button><button class="sec" data-a="bulk" data-m="avail" data-s="${si}">Mark all available</button><button class="sec" data-a="bulk" data-m="price" data-s="${si}">Change all prices…</button></div>`+
+  s.items.map((it,ii)=>`<div class="row">${inp(`D.${si}.items.${ii}.name`,it.name,'Item name')}${inp(`D.${si}.items.${ii}.sub`,it.sub,'Note (optional)')}<label class="so">₱${inp(`D.${si}.items.${ii}.price`,it.price,'Price','number','min="0" step="1" inputmode="numeric"')}</label>${chk(`D.${si}.items.${ii}.fl`,it.fl,'Flavor choice')}${chk(`D.${si}.items.${ii}.sold`,it.sold,'Sold out')}${mv(`D.${si}.items`,ii)}</div>`).join('')+
+  `<button class="sec" data-a="additem" data-s="${si}" style="margin-top:8px">+ Add item</button></section>`).join('')+'<button class="sec" data-a="addsec">+ Add section</button>'}
+ if(tab==='photos'){h='<p class="hint">Photo cards on the menu page. Keep their prices in step with the price list. Photos are resized automatically when uploaded.</p><div class="tools">'+upl('newG','+ Add photo card')+'</div><div class="sec1">'+S.G.map((g,i)=>`<div class="row ph"><img src="${g.src.startsWith('http')?g.src:'img/t-'+g.src.slice(4)}" alt="">${inp(`G.${i}.name`,g.name,'Name')}${inp(`G.${i}.sub`,g.sub,'Note (optional)')}${inp(`G.${i}.price`,g.price,'Price, e.g. ₱130')}${chk(`G.${i}.sold`,g.sold,'Sold out')}${upl('G.'+i,'Replace photo')}<span class="mv"><button class="del" data-a="del" data-arr="G" data-i="${i}">Delete</button></span></div>`).join('')+'</div>'}
+ if(tab==='reviews'){h='<p class="hint">Testimonials appear in a “What our customers say” section. Add a screenshot of the customer’s message if you have one. Untick “Show” to hide one without deleting it.</p><button class="sec" data-a="addrev" style="margin-bottom:12px">+ Add testimonial</button>'+S.R.map((r,i)=>`<div class="sec1 rev">${inp(`R.${i}.name`,r.name,'Customer name')}${inp(`R.${i}.product`,r.product,'Product (optional)')}<select data-p="R.${i}.stars" aria-label="Stars">${[5,4,3,2,1].map(n=>`<option value="${n}"${n===+r.stars?' selected':''}>${'★'.repeat(n)}</option>`).join('')}</select><textarea data-p="R.${i}.text" placeholder="What the customer said" aria-label="Testimonial">${ea(r.text)}</textarea><div class="ft">${chk(`R.${i}.show`,r.show,'Show on site')}${r.img?`<img src="${ea(r.img)}" alt="Screenshot"><button class="del" data-a="rmimg" data-i="${i}">Remove photo</button>`:upl('R.'+i,'Add screenshot')}${mv('R',i)}</div></div>`).join('')}
+ if(tab==='site'){h=`<p class="hint">Text shown around the menu. Use **double stars** for bold. The “Updated” date under the headline sets itself each time you save.</p>
+  <div class="sec1"><h3>Announcement banner</h3><p class="hint">A coloured strip at the very top, e.g. “Closed Oct 25–26. Orders resume Oct 27.”</p>${chk('site.bannerOn',S.site.bannerOn,'Show banner')}<div style="margin-top:8px">${inp('site.banner',S.site.banner,'Banner message')}</div></div>
+  <div class="sec1"><h3>Highlights under the headline</h3><p class="hint">One per line.</p><textarea data-p="site.perks" aria-label="Highlights">${ea(S.site.perks)}</textarea></div>
+  <div class="sec1"><h3>Info cards (How to order, delivery, payment…)</h3>${S.site.info.map((c,i)=>`<div class="row" style="grid-template-columns:1fr 2fr auto">${inp(`site.info.${i}.t`,c.t,'Card title')}<textarea data-p="site.info.${i}.h" aria-label="Card text" style="min-height:60px">${ea(c.h)}</textarea>${mv('site.info',i)}</div>`).join('')}<button class="sec" data-a="addcard" style="margin-top:8px">+ Add card</button></div>
+  <div class="sec1"><h3>Flavor choices</h3><p class="hint">One per line. Shown on items marked “Flavor choice” and in the checkout dropdown.</p><textarea data-p="fl" aria-label="Flavors" style="min-height:140px">${ea(S.fl)}</textarea></div>`}
+ if(tab==='orders'){h='<p>Loading orders…</p>';ordersTab()}
+ $('#ad').innerHTML=h;const f=$('#flt');if(f)f.oninput=()=>{const v=f.value.toLowerCase();document.querySelectorAll('#ad .row').forEach(r=>{r.hidden=!!v&&![...r.querySelectorAll('input[type=text]')].some(i=>i.value.toLowerCase().includes(v))})}}
+async function ordersTab(){try{const o=await rest('orders?select=*&order=created_at.desc&limit=300');if(tab!=='orders')return;
+ const live=o.filter(x=>x.status!=='cancelled'),wk=live.filter(x=>Date.now()-new Date(x.created_at)<6048e5),sum=a=>a.reduce((s,x)=>s+Number(x.total),0),top={};
+ live.forEach(x=>x.items.forEach(i=>top[i.name]=(top[i.name]||0)+i.qty));const tp=Object.entries(top).sort((a,b)=>b[1]-a[1]).slice(0,8);
+ $('#ad').innerHTML=`<p class="hint">Orders customers sent through the website (logged when they tap “Send order via Messenger”). Last 300 shown.</p><div class="stats"><div class="stat">Last 7 days<b>${wk.length} orders</b>${peso(sum(wk))}</div><div class="stat">All shown<b>${live.length} orders</b>${peso(sum(live))}</div></div>
+ <div class="sec1"><h3>Top sellers (by quantity)</h3>${tp.length?tp.map(([n,q])=>`<div class="hv"><span>${enc(n)}</span><b>${q}</b></div>`).join(''):'<p class="hint">No orders yet.</p>'}</div>
+ <div class="sec1"><div class="tools"><button class="sec" data-a="reload">Refresh</button></div>${o.length?o.map(x=>`<div class="ord"><div><b>${enc(x.customer)}</b> · ${peso(x.total)}<br><small>${fmtd(x.created_at)} · ${enc(x.fulfillment||'')} · ${enc(x.schedule||'')} · ${enc(x.payment||'')}${x.address?'<br>'+enc(x.address):''}</small><ul>${x.items.map(i=>`<li>${i.qty}× ${enc(i.name)}${i.flavors&&i.flavors.length?' <small>('+i.flavors.map(enc).join(', ')+')</small>':''}</li>`).join('')}</ul></div><div><select data-oid="${x.id}" aria-label="Order status">${['new','preparing','done','cancelled'].map(s=>`<option${s===x.status?' selected':''}>${s}</option>`).join('')}</select><br><button class="del" data-a="delord" data-oid="${x.id}">Delete</button></div></div>`).join(''):'<p class="hint">No orders yet.</p>'}</div>`}catch(e){if(tab==='orders')$('#ad').innerHTML='<p class="err">'+enc(e.message)+'</p>'}}
+function mark(){dirty=true;$('#save').disabled=false;$('#st').textContent='Unsaved changes'}
+document.addEventListener('input',e=>{const t=e.target,p=t.dataset.p;if(!p)return;const k=p.split('.'),l=k.pop();k.reduce((o,x)=>o[x],S)[l]=t.type==='checkbox'?t.checked:t.value;mark()});
+document.addEventListener('change',async e=>{const t=e.target;
+ if(t.dataset.oid){try{await rest('orders?id=eq.'+t.dataset.oid,{method:'PATCH',headers:{Prefer:'return=minimal'},body:JSON.stringify({status:t.value})});$('#st').textContent='Order updated'}catch(x){$('#st').textContent=x.message}return}
+ if(!t.dataset.up||!t.files[0])return;$('#st').textContent='Uploading photo…';
+ try{const url=await upload(t.files[0]),u=t.dataset.up;if(u==='newG')S.G.unshift({name:'New product',sub:'',price:'₱',src:url,sold:false});else{const[k,i]=u.split('.');if(k==='G')S.G[+i].src=url;else S.R[+i].img=url}mark();draw()}catch(x){$('#st').textContent=x.message}});
+document.addEventListener('click',async e=>{const b=e.target.closest('[data-a]');if(!b)return;const a=b.dataset.a,i=+b.dataset.i,arr=b.dataset.arr&&get(b.dataset.arr);
+ if(a==='reload'){ordersTab();return}
+ if(a==='delord'){if(!confirm('Delete this order record?'))return;try{await rest('orders?id=eq.'+b.dataset.oid,{method:'DELETE'});ordersTab()}catch(x){$('#st').textContent=x.message}return}
+ if(a==='del'){const n=arr[i].name||arr[i].t||arr[i].src||'this';if(!confirm('Delete “'+(typeof n==='string'&&n.length<60?n:'this')+'”?'))return;arr.splice(i,1)}
+ else if(a==='up'&&i>0)[arr[i-1],arr[i]]=[arr[i],arr[i-1]];else if(a==='dn'&&i<arr.length-1)[arr[i+1],arr[i]]=[arr[i],arr[i+1]];
+ else if(a==='additem')S.D[+b.dataset.s].items.push({name:'',sub:'',price:'',fl:false,sold:false});
+ else if(a==='addsec')S.D.push({t:'New section',n:'',star:false,items:[]});
+ else if(a==='addrev')S.R.unshift({name:'',product:'',text:'',stars:5,show:true,img:''});
+ else if(a==='addcard')S.site.info.push({t:'',h:''});
+ else if(a==='rmimg')S.R[i].img='';
+ else if(a==='bulk'){const s=S.D[+b.dataset.s],m=b.dataset.m;
+  if(m==='price'){const d=parseFloat(prompt('Add this many pesos to every item in “'+s.t+'”.\nUse a minus sign to lower prices (e.g. -5).'));if(!d)return;s.items.forEach(x=>{if(Number(x.price)>0)x.price=Math.max(1,Math.round(Number(x.price)+d))})}
+  else s.items.forEach(x=>x.sold=m==='sold')}
+ else if(!['up','dn'].includes(a))return;
+ mark();draw()});
+document.querySelector('.top nav').onclick=e=>{const t=e.target.dataset.tab;if(t){tab=t;draw()}};
+$('#save').onclick=async()=>{const o=out();
+ for(const s of o.D)for(const x of s[2]){if(!x[0].trim()){alert('An item in “'+s[0]+'” has no name.');return}const p=typeof x[1]==='string'?x[2]:x[1];if(!(p>0)){alert('“'+x[0]+'” needs a price above 0.');return}}
+ $('#save').disabled=true;$('#st').textContent='Saving…';
+ try{await rest('site_data?on_conflict=id',{method:'POST',headers:{Prefer:'resolution=merge-duplicates,return=minimal'},body:JSON.stringify([{id:'main',data:o,updated_at:new Date().toISOString()}])});dirty=false;$('#st').textContent='Saved ✓ live on the site now'}catch(e){$('#save').disabled=false;$('#st').textContent=e.message}};
+$('#hbtn').onclick=async()=>{const d=$('#hist');$('#hl').textContent='Loading…';d.showModal();
+ try{const v=await rest('site_data_history?select=id,saved_at,saved_by&order=id.desc&limit=30');$('#hl').innerHTML=v.length?v.map(x=>`<div class="hv"><span>${fmtd(x.saved_at)}<br><small class="hint">replaced by ${enc(x.saved_by||'')}</small></span><button class="sec" data-hid="${x.id}">Load</button></div>`).join(''):'<p class="hint">No earlier versions yet. They appear after your second save.</p>'}catch(e){$('#hl').textContent=e.message}};
+$('#hx').onclick=()=>$('#hist').close();
+$('#hl').onclick=async e=>{const id=e.target.dataset.hid;if(!id)return;if(dirty&&!confirm('Replace your unsaved changes with this version?'))return;
+ try{const r=await rest('site_data_history?id=eq.'+id+'&select=data');load(r[0].data);mark();$('#hist').close();draw();$('#st').textContent='Old version loaded. Press Save changes to make it live.'}catch(x){$('#hl').textContent=x.message}};
+window.onbeforeunload=()=>dirty?'':undefined;
+$('#out').onclick=()=>{if(dirty&&!confirm('Discard unsaved changes?'))return;dirty=false;sessionStorage.removeItem('ffses');location.reload()};
+function seedDesserts(){const d=MENU0.DESSERTS;if(!d||S.seeded.includes(d.id))return false;
+ const isD=t=>/^desserts\b/i.test(String(t).trim()),old={};
+ S.D.forEach(s=>{if(isD(s.t))s.items.forEach(i=>old[i.name]=i)});S.D=S.D.filter(s=>!isD(s.t));
+ const known=new Set(d.groups.flatMap(g=>g[2].map(x=>x[0])));
+ const secs=d.groups.map(([t,nt,items])=>({t:dec(t),star:false,n:nt,items:items.map(([name,price])=>{const o=old[name];return{name,sub:o?o.sub:'',price:o?o.price:price,fl:false,sold:o?o.sold:false}})}));
+ Object.keys(old).filter(k=>!known.has(k)).forEach(k=>secs[secs.length-1].items.push(old[k]));
+ S.D.splice(Math.min(1,S.D.length),0,...secs);
+ d.photos.forEach(([name,sub,price,src])=>{if(!S.G.some(g=>g.src===src))S.G.push({name,sub,price,src,sold:false})});
+ if(!/dessert/i.test(S.site.perks))S.site.perks=(S.site.perks.trim()?S.site.perks.trim()+'\n':'')+d.perk;
+ if(!S.site.banner.trim()){S.site.banner=d.banner;S.site.bannerOn=true}
+ return true}
+async function boot(){let rm={};try{const r=await fetch(SB.url+'/rest/v1/site_data?id=eq.main&select=data',{headers:{...H(),'Cache-Control':'no-cache'}});if(r.ok){const rows=await r.json();rm=(rows[0]&&rows[0].data)||{}}}catch(e){}load(rm);const added=seedDesserts();$('#login').hidden=true;$('#app').hidden=false;draw();if(added){mark();$('#st').textContent='Desserts updated (grouped price list, photos, highlight line, banner). Press Save changes to put them live.'}}
+$('#lf').onsubmit=async e=>{e.preventDefault();$('#le').textContent='';try{await auth('password',{email:$('#em').value.trim(),password:$('#pw').value});if(await isAdmin())boot();else{sessionStorage.removeItem('ffses');ses=null;$('#le').textContent='Signed in, but this email is not an admin yet.'}}catch(x){$('#le').textContent=x.message}};
+if(ses)isAdmin().then(ok=>ok?boot():sessionStorage.removeItem('ffses')).catch(()=>sessionStorage.removeItem('ffses'));
+</script></body></html>
